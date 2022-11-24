@@ -1,0 +1,36 @@
+html,
+body {
+	min-width: 1000px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* 将大页面的滚动条隐藏 */
+	/* overflow: hidden; */
+	/* overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+	/* 设置滚动条的宽高 */
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	/* 设置滚动条上的滚动滑块 */
+	background: #46af7d;
+	overflow: visible;
+	border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+	/* 设置滚动条轨道 */
+	background: #efefef;
+	border-radius: 2px;
+}
+
+.maincontent{
+	/* width: 80%; */
+	max-width: 1126px;
+	padding: 0 20px;
+	margin: 0 auto;
+}

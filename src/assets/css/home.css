@@ -1,0 +1,180 @@
+/* 该css为主页的css */
+.home {
+	width: 100%;
+}
+
+/* 背景图 */
+.home-bg {
+	height: 450px;
+	background: url('../../assets/images/bg.svg') center/cover no-repeat;
+}
+
+.dictum {
+	text-align: center;
+	padding-top: 175px;
+}
+
+.dictum p {
+	font-size: 24px;
+}
+
+/* 主内容 */
+.home-content {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-top: 10px;
+}
+
+/* 列表外盒 */
+.home-content-left {
+	height: 900px;
+	flex: 1;
+	padding: 0 15px;
+}
+
+/* 个人内容 */
+.home-content-right {
+	width: 300px;
+	height: 100%;
+	transition: all 0.3s;
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+	margin-left: 15px;
+	padding: 0 15px;
+	position: sticky;
+	top: 70px;
+	overflow: hidden;
+}
+
+.home-content-right:hover {
+	box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* 个人内容-上 */
+.individual-top {
+	height: 250px;
+	text-align: center;
+}
+
+.individual-top .portrait .el-avatar {
+	width: 100px;
+	height: 100px;
+	margin-top: 30px;
+}
+
+.individual-top .num-box {
+	width: 220px;
+	height: 50px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.individual-top .name {
+	margin-bottom: 10px;
+}
+
+.num-left,
+.num-right {
+	width: 50%;
+}
+
+.num-left {
+	border-right: 1px solid #333;
+}
+
+.individual-top .num-box p {
+	margin: 0 0 5px 0;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.individual-top .num-box span {
+	font-size: 14px;
+}
+
+/* 个人内容-中 */
+.individual-content {
+	border-top: 1px solid #eaecef;
+	border-bottom: 1px solid #eaecef;
+}
+
+.individual-content p {
+	font-size: 16px;
+	color: #7F7F7F;
+}
+
+.content-box {
+	height: 45px;
+	line-height: 45px;
+	padding: 0 10px;
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 10px;
+	transition: all 0.5s;
+}
+
+.content-box:hover {
+	transform: scale(1.05, 1.05);
+	transition: all 0.5s;
+	color: #3eaf7c;
+	cursor: pointer;
+}
+
+.content-box span {
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+	border-radius: 5px;
+	/* 通过方法来随机展示颜色 */
+	/* background-color: #f47e60; */
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+/* 个人内容-下 */
+.individual-bottom {
+	padding-bottom: 10px;
+}
+
+.individual-bottom p {
+	font-size: 16px;
+	color: #7F7F7F;
+}
+
+.individual-bottom .el-tag {
+	color: #fff;
+	border-radius: 5px;
+	margin: 3px;
+	transition: all 0.5s;
+}
+
+.individual-bottom .el-tag:hover {
+	transform: scale(1.05, 1.05);
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+/* 底部 */
+.footer {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	border-top: 1px solid #eaecef;
+	margin-top: 20px;
+}
+
+.footer p {
+	font-size: 14px;
+	color: #3eaf7c;
+	margin: 0;
+}
+
+.footer p span {
+	margin: 0 5px;
+}
