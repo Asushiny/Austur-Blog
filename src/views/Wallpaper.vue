@@ -1,7 +1,8 @@
 <script setup>
 	import {
-		ref,
 		onMounted,
+		ref,
+		onBeforeMount
 	} from 'vue'
 	import {
 		getImage
@@ -9,7 +10,8 @@
 
 	const imageslist = ref([])
 
-	onMounted(() => {
+	// onMounted(() => {
+	onBeforeMount(() => {
 		getImage().then(res => {
 			imageslist.value = res
 		})
@@ -18,7 +20,8 @@
 
 <template>
 	<div class="wallpaper">
-		<el-image class="image" v-for="list in imageslist" :key="list.name" :src="list.url" :preview-src-list="[list.url]" lazy />
+		<el-image class="image" v-for="list in imageslist" :key="list.name" :src="list.url"
+			:preview-src-list="[list.url]" lazy />
 	</div>
 </template>
 

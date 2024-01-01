@@ -50,7 +50,7 @@
 								用户名
 							</div>
 						</template>
-						Austur
+						Austur.
 					</el-descriptions-item>
 					<el-descriptions-item>
 						<template #label>
