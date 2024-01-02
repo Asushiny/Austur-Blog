@@ -55,7 +55,7 @@
 					<el-descriptions-item>
 						<template #label>
 							<div class="cell-item">
-								<el-icon>
+								<el-icon><strong></strong>
 									<InfoFilled />
 								</el-icon>
 								状态
