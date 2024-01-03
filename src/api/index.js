@@ -6,7 +6,7 @@ import {request} from "./request.js"
 export function getLogin(){
 	return request({
 		url: '/login.json',
-		methods: 'get'
+		methods: 'post'
 	})
 }
 

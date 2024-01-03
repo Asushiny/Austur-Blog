@@ -4,15 +4,14 @@ import axios from 'axios';
 export function request(config) {
 	const server = axios.create({
 		// baseURL: import.meta.env.VITE_APP_API_BASEURL,
-		// baseURL: 'http://127.0.0.1:5173/src/api', //本地域名、接口前缀
-		baseURL: 'https://www.austur.top/src/api', 
+		baseURL: 'http://127.0.0.1:5173/src/api', //本地域名、接口前缀
+		// baseURL: 'https://www.austur.top/src/api', 
 		timeout: 3000, //请求超时时间
 	});
 	//请求拦截器
 	server.interceptors.request.use(config => {
 		// 在请求发送前做一些处理
 		// config.headers['Authorization'] = getToken();
-		console.log("请求",config)
 		return config;
 	}, error => {
 		// 处理请求错误
@@ -20,7 +19,7 @@ export function request(config) {
 	});
 	//响应拦截器
 	server.interceptors.response.use(response => {
-		console.log("响应",response)
+		console.log("响应",response.status)
 		// 在响应数据返回前做一些处理
 		return response.data;
 	}, error => {
