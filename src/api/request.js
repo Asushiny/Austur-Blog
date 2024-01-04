@@ -4,8 +4,8 @@ import axios from 'axios';
 export function request(config) {
 	const server = axios.create({
 		// baseURL: import.meta.env.VITE_APP_API_BASEURL,
-		// baseURL: 'http://127.0.0.1:5173/src/api', //本地域名、接口前缀
-		baseURL: 'https://www.austur.top/src/api', 
+		baseURL: 'http://127.0.0.1:5173/src/api', //本地域名、接口前缀
+		// baseURL: 'https://www.austur.top/src/api', 
 		timeout: 3000, //请求超时时间
 	});
 	//请求拦截器
