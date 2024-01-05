@@ -8,7 +8,7 @@
 		ElLoading
 	} from 'element-plus'
 	import router from '@/router'
-	import {getLogin} from '../api/index.js'
+	import {getLogin} from '@/api/index.js'
 	//Dialog显示
 	const showDialog = ref(false)
 	//打开对话框时，input获取焦点

@@ -9,9 +9,6 @@
 		Moon
 	} from '@element-plus/icons-vue'
 	import router from '@/router'
-	// import {
-	// 	getLyric
-	// } from '../api/index.js'
 
 	//去到首页
 	const goIndex = (val) => {
@@ -41,12 +38,6 @@
 			// router.push('/index')
 		}
 	})
-
-	//获取歌词栏导航
-	// const lyriclist = ref([])
-	// getLyric().then(res => {
-	// 	lyriclist.value = res
-	// })
 </script>
 
 <template>
@@ -72,23 +63,10 @@
 							<el-icon><House /></el-icon>
 							<span>首页</span>
 						</el-menu-item>
-						<!-- <el-menu-item index="/blog" v-if="isLogin">
-							<el-icon>
-								<document />
-							</el-icon>
-							<span>博客</span>
-						</el-menu-item> -->
 						<el-menu-item index="/lyriclist">
 							<el-icon><Memo /></el-icon>
 							<span>歌词</span>
 						</el-menu-item>
-						<!-- <el-sub-menu index="/lyric">
-							<template #title>
-								<el-icon><Memo /></el-icon>
-								<span>歌词</span>
-							</template>
-							<el-menu-item index="/lyric?123" v-for="item in lyriclist">{{ item.title }}</el-menu-item>
-						</el-sub-menu> -->
 						<el-menu-item index="/wallpaper">
 							<el-icon><Picture /></el-icon>
 							<span>图片墙</span>

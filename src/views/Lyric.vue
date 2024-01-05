@@ -5,7 +5,7 @@
 	import { useRoute } from 'vue-router'
 	import {
 		getLyric
-	} from '../api/index.js'
+	} from '@/api/index.js'
 	const route = useRoute()
 	let songId=route.query.id;
 	console.log(songId)
@@ -13,6 +13,7 @@
 	// 获取歌词
 	const lyriclist = ref([])
 	getLyric(songId).then(res => {
+		console.log('到这里了')
 		lyriclist.value = res
 	})
 </script>

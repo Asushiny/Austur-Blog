@@ -6,7 +6,7 @@
 	} from 'vue'
 	import {
 		getImage
-	} from '../api/index.js'
+	} from '@/api/index.js'
 
 	const imageslist = ref([])
 
