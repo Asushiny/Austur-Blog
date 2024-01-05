@@ -17,5 +17,9 @@ export default defineConfig({
 		alias: {
 			'@': fileURLToPath(new URL('./src', import.meta.url))
 		}
+	},
+	//增加新的配置
+	build:{
+		assetsInlineLimit: 0
 	}
 })
