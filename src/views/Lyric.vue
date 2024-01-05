@@ -15,18 +15,6 @@
 	getLyric(songId).then(res => {
 		lyriclist.value = res
 	})
-	
-	// import axios from 'axios';
-	// const lyricSrc = '@/src/api/lyric/'+songId+'.json'
-	// console.log(lyricSrc)
-	// axios.get(lyricSrc) // 发送GET请求，请求本地的data.json文件
-	//   .then((response) => {
-	//     lyriclist.value = response.data; // 将响应的数据赋值给data数组
-	// 	console.log(lyriclist)
-	//   })
-	//   .catch((error) => {
-	//     console.error(error);
-	//   });
 </script>
 
 <template>

@@ -11,7 +11,7 @@ export function request(config) {
 	//请求拦截器
 	server.interceptors.request.use(config => {
 		// 在请求发送前做一些处理
-		// config.headers['Authorization'] = getToken();
+		config.headers['Authorization'] = 'Austur';
 		return config;
 	}, error => {
 		// 处理请求错误
