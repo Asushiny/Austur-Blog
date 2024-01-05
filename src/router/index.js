@@ -1,7 +1,6 @@
 import {
 	createRouter,
-	createWebHistory,
-	createWebHashHistory
+	createWebHistory
 } from 'vue-router'
 
 //导入组件
@@ -15,7 +14,7 @@ import TimelineVue from '@/views/Timeline.vue'
 
 //创建路由器
 const router = createRouter({
-	history: createWebHashHistory(),
+	history: createWebHistory(),
 	routes: [{
 			path: '/index',
 			component: IndexVue,

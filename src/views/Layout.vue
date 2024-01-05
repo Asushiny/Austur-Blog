@@ -34,10 +34,10 @@
 		let logining = localStorage.getItem('login');
 		if (logining) {
 			isLogin.value = true
-			console.log(isLogin)
+			// console.log(isLogin)
 		} else {
 			isLogin.value = false
-			console.log(isLogin)
+			// console.log(isLogin)
 			// router.push('/index')
 		}
 	})
