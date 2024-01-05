@@ -6,7 +6,8 @@ import {request} from "./request.js"
 export function getLogin(){
 	return request({
 		url: 'src/api/login.json',
-		methods: 'post'
+		methods: 'post',
+		responseType:'json'
 	})
 }
 
@@ -14,7 +15,8 @@ export function getLogin(){
 export function getLyric(songId){
 	return request({
 		url: 'src/api/lyric/'+songId+'.json',
-		methods: 'get'
+		methods: 'get',
+		responseType:'json'
 	})
 }
 
@@ -22,6 +24,7 @@ export function getLyric(songId){
 export function getImage(){
 	return request({
 		url: 'src/api/images.json',
-		methods: 'get'
+		methods: 'get',
+		responseType:'json'
 	})
 }
