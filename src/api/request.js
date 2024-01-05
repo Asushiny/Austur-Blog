@@ -19,7 +19,7 @@ export function request(config) {
 	});
 	//响应拦截器
 	server.interceptors.response.use(response => {
-		console.log("响应",response.status)
+		console.log("这里",response.status)
 		// 在响应数据返回前做一些处理
 		return response.data;
 	}, error => {

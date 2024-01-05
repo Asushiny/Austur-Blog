@@ -5,7 +5,7 @@ import {request} from "./request.js"
 //登录
 export function getLogin(){
 	return request({
-		url: '/src/api/login.json',
+		url: 'src/api/login.json',
 		methods: 'post'
 	})
 }
@@ -13,7 +13,7 @@ export function getLogin(){
 //歌词
 export function getLyric(songId){
 	return request({
-		url: '/src/api/lyric/'+songId+'.json',
+		url: 'src/api/lyric/'+songId+'.json',
 		methods: 'get'
 	})
 }
@@ -21,7 +21,7 @@ export function getLyric(songId){
 //图片
 export function getImage(){
 	return request({
-		url: '/src/api/images.json',
+		url: 'src/api/images.json',
 		methods: 'get'
 	})
 }
