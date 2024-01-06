@@ -97,7 +97,7 @@
 		width: 100%;
 		min-width: 1000px;
 		height: 100vh;
-		background-image: url("../assets/images/bg.jpg");
+		background-image: url("../assets/bg.jpg");
 		background-size: cover;
 		box-sizing: border-box;
 		background-repeat: no-repeat;

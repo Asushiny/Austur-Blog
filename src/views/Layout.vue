@@ -46,7 +46,7 @@
 			<el-header>
 				<el-row>
 					<el-col :span="12" class="h-left">
-						<img src="../assets/images/logo.png" alt="logo" class="logo" @click="goIndex" />
+						<img src="../assets/logo.png" alt="logo" class="logo" @click="goIndex" />
 					</el-col>
 					<el-col :span="12" class="h-right">
 						<!-- 暗黑模式按钮 -->
