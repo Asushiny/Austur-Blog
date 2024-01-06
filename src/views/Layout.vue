@@ -29,12 +29,23 @@
 	onBeforeMount(() => {
 		//判断是否已登录
 		let logining = localStorage.getItem('login');
+		//判断是否存在localStorage
 		if (logining) {
-			isLogin.value = true
-			// console.log(isLogin)
+			logining = JSON.parse(logining);
+			var currentTime = new Date().getTime();
+			//当前时间大于存储时间
+			if (currentTime > logining.expiration) {
+				// 数据已过期，清除
+				localStorage.removeItem('login');
+				isLogin.value = false
+				console.log('currentTime>expiration')
+			}else{
+				isLogin.value = true
+				console.log('currentTime<expiration')
+			}
 		} else {
 			isLogin.value = false
-			// console.log(isLogin)
+			console.log('nologin')
 			// router.push('/index')
 		}
 	})
@@ -60,24 +71,34 @@
 				<el-aside>
 					<el-menu class="el-menu-vertical-demo menu" default-active="/" unique-opened router>
 						<el-menu-item index="/">
-							<el-icon><House /></el-icon>
+							<el-icon>
+								<House />
+							</el-icon>
 							<span>首页</span>
 						</el-menu-item>
 						<el-menu-item index="/lyriclist">
-							<el-icon><Memo /></el-icon>
+							<el-icon>
+								<Memo />
+							</el-icon>
 							<span>歌词</span>
 						</el-menu-item>
 						<el-menu-item index="/wallpaper">
-							<el-icon><Picture /></el-icon>
+							<el-icon>
+								<Picture />
+							</el-icon>
 							<span>图片墙</span>
 						</el-menu-item>
 						<el-menu-item index="/timeline" v-if="isLogin">
-							<el-icon><Timer /></el-icon>
+							<el-icon>
+								<Timer />
+							</el-icon>
 							<span>时间轴</span>
 						</el-menu-item>
 					</el-menu>
-					
-					<iframe class="musicBox" frameborder="no" border="0" marginwidth="0" marginheight="0" width=240 height=66 src="https://i.y.qq.com/n2/m/outchain/player/index.html?songid=426989659&songtype=0"></iframe>
+
+					<iframe class="musicBox" frameborder="no" border="0" marginwidth="0" marginheight="0" width=240
+						height=66
+						src="https://i.y.qq.com/n2/m/outchain/player/index.html?songid=426989659&songtype=0"></iframe>
 				</el-aside>
 				<el-container>
 					<el-main>
@@ -141,13 +162,14 @@
 	.menu {
 		height: calc(100vh - 60px);
 	}
-	
-	.musicBox{
+
+	.musicBox {
 		position: absolute;
 		left: 5px;
 		bottom: 5px;
 	}
-	.wrap{
+
+	.wrap {
 		width: 100%;
 	}
 

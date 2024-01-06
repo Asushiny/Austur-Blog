@@ -50,9 +50,12 @@
 		//当密码的长度为6时，开始判断密码是否正确
 		if (val.length === 6) {
 			getLogin().then(data => {
-				console.log(val,data.psd)
+				// console.log(val,data.psd)
 				if (val == data.psd) {
-					localStorage.setItem('login', 'true');
+					//设置过期时间为1天
+					var expiration = new Date().getTime() + (24 * 60 * 60 * 1000);
+					localStorage.setItem('login', JSON.stringify({ value: 'true', expiration: expiration }));
+					// localStorage.setItem('login', 'true');
 					const loading = ElLoading.service({
 						lock: true,
 						text: '密码正确，正在进入主页...',
