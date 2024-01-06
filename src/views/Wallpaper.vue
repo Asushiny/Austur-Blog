@@ -1,40 +1,37 @@
 <script setup>
 	import {
-		onMounted,
 		ref,
 		onBeforeMount
 	} from 'vue'
+	import {
+		LazyImg,
+		Waterfall
+	} from 'vue-waterfall-plugin-next'
+	import 'vue-waterfall-plugin-next/dist/style.css'
 	import {
 		getImage
 	} from '@/api/index.js'
 
 	const imageslist = ref([])
 
-	// onMounted(() => {
 	onBeforeMount(() => {
 		getImage().then(res => {
 			imageslist.value = res
+			console.log(imageslist)
 		})
 	})
 </script>
 
 <template>
-	<div class="wallpaper">
-		<el-image class="image" v-for="list in imageslist" :key="list.name" :src="list.url"
-			:preview-src-list="[list.url]" lazy />
-	</div>
+	<Waterfall :list="imageslist" :width="320">
+		<template #item="{ item, url, index }">
+			<div class="card">
+				<LazyImg :url="url" />
+			</div>
+		</template>
+	</Waterfall>
 </template>
 
 <style scoped>
-	.wallpaper {
-		width: 100%;
-		column-count: 4;
-	}
 
-	.image {
-		width: 100%;
-		height: 100%;
-		padding: 1%;
-		cursor: pointer;
-	}
 </style>
