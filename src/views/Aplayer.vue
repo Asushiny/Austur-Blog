@@ -2,11 +2,10 @@
 	import APlayer from 'APlayer';
 	import {
 		getMusic
-	} from '@/api/index.js'
-
+	} from '@/api/index.js';
+	
 	export default {
-		name: 'HomeView',
-		components: {},
+		name: 'AplayerView',
 		mounted() {
 			this.addMyAudio();
 		},
