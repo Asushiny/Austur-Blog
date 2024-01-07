@@ -11,6 +11,15 @@ export function getLogin(){
 	})
 }
 
+//音乐
+export function getMusic(){
+	return request({
+		url: '/music.json',
+		methods: 'get',
+		responseType:'json'
+	})
+}
+
 //歌词
 export function getLyric(songId){
 	return request({

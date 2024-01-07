@@ -9,6 +9,7 @@
 		Moon
 	} from '@element-plus/icons-vue'
 	import router from '@/router'
+	import aplayer from './Aplayer.vue'
 
 	//去到首页
 	const goIndex = (val) => {
@@ -39,7 +40,7 @@
 				localStorage.removeItem('login');
 				isLogin.value = false
 				console.log('currentTime>expiration')
-			}else{
+			} else {
 				isLogin.value = true
 				console.log('currentTime<expiration')
 			}
@@ -95,15 +96,12 @@
 							<span>时间轴</span>
 						</el-menu-item>
 					</el-menu>
-
-					<iframe class="musicBox" frameborder="no" border="0" marginwidth="0" marginheight="0" width=240
-						height=66
-						src="https://i.y.qq.com/n2/m/outchain/player/index.html?songid=426989659&songtype=0"></iframe>
 				</el-aside>
 				<el-container>
 					<el-main>
 						<el-scrollbar>
-							<router-view></router-view>
+							<router-view class="view"></router-view>
+							<aplayer></aplayer>
 						</el-scrollbar>
 					</el-main>
 					<el-footer>
@@ -163,12 +161,6 @@
 		height: calc(100vh - 60px);
 	}
 
-	.musicBox {
-		position: absolute;
-		left: 5px;
-		bottom: 5px;
-	}
-
 	.wrap {
 		width: 100%;
 	}
@@ -178,6 +170,11 @@
 		padding: 10px;
 		/* background-color: #fafafa; */
 		overflow-y: hidden;
+		position: relative;
+	}
+	
+	.view{
+		padding-bottom: 90px;
 	}
 
 	.el-footer {

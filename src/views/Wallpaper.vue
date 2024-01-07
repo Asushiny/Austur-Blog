@@ -17,7 +17,7 @@
 	onBeforeMount(() => {
 		getImage().then(res => {
 			imageslist.value = res
-			console.log(imageslist)
+			// console.log(imageslist)
 		})
 	})
 </script>

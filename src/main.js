@@ -22,7 +22,7 @@ const app = createApp(App)
 app.use(router)
 app.use(VueWechatTitle)
 app.use(ElementPlus)
-// app.use(axios)
+
 app.mount('#app')
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
