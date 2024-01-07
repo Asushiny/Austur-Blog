@@ -19,7 +19,9 @@ export default defineConfig({
 		}
 	},
 	//增加新的配置
-	build:{
-		assetsInlineLimit: 0
+	build: {
+		rollupOptions: {
+			external: ['APlayer']
+		}
 	}
 })
