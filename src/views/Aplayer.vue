@@ -1,4 +1,3 @@
-
 <script>
 	//aplayer
 	import 'APlayer/dist/APlayer.min.css';
