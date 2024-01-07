@@ -1,9 +1,12 @@
+
 <script>
+	//aplayer
+	import 'APlayer/dist/APlayer.min.css';
 	import APlayer from 'APlayer';
 	import {
 		getMusic
 	} from '@/api/index.js';
-	
+
 	export default {
 		name: 'AplayerView',
 		mounted() {
@@ -30,7 +33,6 @@
 		},
 	}
 </script>
-
 <template>
 	<div id="aplayer"></div>
 </template>

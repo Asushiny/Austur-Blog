@@ -7,6 +7,7 @@ import {
 	defineConfig
 } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import APlayer from 'APlayer';
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
@@ -18,9 +19,9 @@ export default defineConfig({
 		}
 	},
 	//增加新的配置
-	// build: {
-	// 	rollupOptions: {
-	// 		external: ['APlayer']
-	// 	}
-	// }
+	build: {
+		rollupOptions: {
+			external: ['APlayer']
+		}
+	}
 })
