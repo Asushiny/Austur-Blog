@@ -2,8 +2,10 @@
 	<div id="aplayer"></div>
 </template>
 <script>
-	import 'APlayer/dist/APlayer.min.css';
-	import APlayer from 'APlayer';
+	// import 'APlayer/dist/APlayer.min.css';
+	import 'aplayer/dist/aplayer.min.css';
+	// import APlayer from 'APlayer';
+	import APlayer from 'aplayer';
 	import {
 		getMusic
 	} from '@/api/index.js'
