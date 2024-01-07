@@ -15,7 +15,8 @@ import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import router from '@/router'
 //动态修改title
 import VueWechatTitle from 'vue-wechat-title'
-
+//导入aplayer
+import 'APlayer/dist/APlayer.min.css';
 
 
 const app = createApp(App)

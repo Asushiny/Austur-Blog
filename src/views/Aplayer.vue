@@ -1,5 +1,4 @@
 <script>
-	import 'APlayer/dist/APlayer.min.css';
 	import APlayer from 'APlayer';
 	import {
 		getMusic
