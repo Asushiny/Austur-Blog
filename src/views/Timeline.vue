@@ -4,7 +4,12 @@
 
 <template>
 	<el-timeline class="timeline">
-		<el-timeline-item center timestamp="2023-11-22" placement="top" type="primary" hollow>
+		<el-timeline-item center timestamp="2024-1-7" placement="top" type="primary" hollow>
+			<el-card>
+				<h4>增加APlayer播放器</h4>
+			</el-card>
+		</el-timeline-item>
+		<el-timeline-item center timestamp="2023-11-22" placement="top" hollow>
 			<el-card>
 				<h4>博客框架更改为vue3 + element-plus</h4>
 			</el-card>

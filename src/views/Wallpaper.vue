@@ -20,18 +20,33 @@
 			// console.log(imageslist)
 		})
 	})
+
+	//点击图片预览
+	const showImg = (val) => {
+		console.log(val)
+	}
 </script>
 
 <template>
 	<Waterfall :list="imageslist" :width="320">
 		<template #item="{ item, url, index }">
 			<div class="card">
-				<LazyImg :url="url" />
+				<LazyImg class="img" :url="url" @click="showImg" />
 			</div>
 		</template>
 	</Waterfall>
 </template>
 
 <style scoped>
+	.img {
+		border: 5px solid #fff;
+	}
 
+	.img:hover {
+		position: relative;
+		display: block;
+		border: 5px solid #55aaff;
+		box-sizing: border-box;
+		cursor: pointer;
+	}
 </style>

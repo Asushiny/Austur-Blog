@@ -101,7 +101,7 @@
 					<el-main>
 						<el-scrollbar>
 							<router-view class="view"></router-view>
-							<aplayer></aplayer>
+							<aplayer v-if="isLogin"></aplayer>
 						</el-scrollbar>
 					</el-main>
 					<el-footer>
