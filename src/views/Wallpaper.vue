@@ -31,22 +31,12 @@
 	<Waterfall :list="imageslist" :width="320">
 		<template #item="{ item, url, index }">
 			<div class="card">
-				<LazyImg class="img" :url="url" @click="showImg" />
+				<LazyImg :url="url" @click="showImg" />
 			</div>
 		</template>
 	</Waterfall>
 </template>
 
 <style scoped>
-	.img {
-		border: 5px solid #fff;
-	}
-
-	.img:hover {
-		position: relative;
-		display: block;
-		border: 5px solid #55aaff;
-		box-sizing: border-box;
-		cursor: pointer;
-	}
+	
 </style>
