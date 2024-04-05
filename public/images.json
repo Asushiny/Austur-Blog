@@ -1,46 +1,34 @@
 [{
 	"name": "image1",
-	"src": "/images/z1.jpg"
+	"src": "/images/1.jpg"
 }, {
 	"name": "image2",
-	"src": "/images/z2.jpg"
+	"src": "/images/2.jpg"
 }, {
 	"name": "image3",
-	"src": "/images/z3.jpg"
+	"src": "/images/3.jpg"
 }, {
 	"name": "image4",
-	"src": "/images/z4.jpg"
+	"src": "/images/4.jpg"
 }, {
 	"name": "image5",
-	"src": "/images/z5.jpg"
+	"src": "/images/5.jpg"
 }, {
 	"name": "image6",
-	"src": "/images/z6.jpg"
+	"src": "/images/6.jpg"
 }, {
 	"name": "image7",
-	"src": "/images/z7.jpg"
+	"src": "/images/7.jpg"
 }, {
 	"name": "image8",
-	"src": "/images/z8.jpg"
+	"src": "/images/8.jpg"
 }, {
 	"name": "image9",
-	"src": "/images/z9.jpg"
+	"src": "/images/9.jpg"
 }, {
 	"name": "image10",
-	"src": "/images/z10.jpg"
+	"src": "/images/10.jpg"
 }, {
 	"name": "image11",
-	"src": "/images/z11.jpg"
-}, {
-	"name": "image12",
-	"src": "/images/z12.jpg"
-}, {
-	"name": "image13",
-	"src": "/images/z13.jpg"
-}, {
-	"name": "image14",
-	"src": "/images/z14.jpg"
-}, {
-	"name": "image15",
-	"src": "/images/z15.jpg"
+	"src": "/images/11.jpg"
 }]

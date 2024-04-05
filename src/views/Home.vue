@@ -151,7 +151,7 @@
 						<el-timeline-item center timestamp="2023-9-7" placement="top">
 							<el-card>
 								<h4>芜湖，第一次三金-1999</h4>
-								<img style="width: 100%;" src="../../public/images/sanjin.png" alt="" />
+								<img style="width: 100%;" src="../../public/images/tri.png" alt="" />
 							</el-card>
 						</el-timeline-item>
 						<el-timeline-item center timestamp="2023-5-31" placement="top">

@@ -18,7 +18,6 @@
 	)
 	const handleOpen = (index : number, row : User) => {
 		console.log(index, row)
-		// router.push('/lyric?id='+row.id)
 		router.push({ path: '/lyric', query: { id: row.id }})
 	}
 
@@ -55,7 +54,6 @@
 		<el-table-column type="index" width="50" />
 		<el-table-column label="songName" prop="songName" />
 		<el-table-column label="singer" prop="singer" />
-		<!-- <el-table-column label="note" prop="note" /> -->
 		<el-table-column align="right">
 			<template #header>
 				<el-input v-model="search" placeholder="Type to search" />
@@ -68,29 +66,8 @@
 	<router-view></router-view>
 </template>
 
-
-<!-- <h1>小小恋歌</h1>
-		<p>Mongol800 (モンゴル800)</p>
-		<p>《小小恋歌》（小さな恋のうた）是2001年日本乐团MONGOL800的一首代表性歌曲，收录于第2张录音室专辑《MESSAGE》中。2007年被用作由山下智久和长泽雅美主演的人气富士月九剧《求婚大作战》的插曲而再一次掀起热潮。
-		</p>
-
-
-		<el-tabs tab-position="right" style="height: 200px" class="demo-tabs">
-			<el-tab-pane label="Part 1">
-				<p>広(ひろ)い宇宙(うちゅう)の数(かず)ある一(ひと)つ</p>
-				<p>在无垠宇宙中那独一无二的</p>
-			</el-tab-pane>
-			<el-tab-pane label="Part 2">Config</el-tab-pane>
-			<el-tab-pane label="Part 3">Role</el-tab-pane>
-		</el-tabs> -->
-<!-- </div> -->
-
 <style>
 	.lyric {
 		margin: 10px auto 0 auto;
 	}
-
-	/* h1 {
-		font-size: 30px
-	} */
 </style>

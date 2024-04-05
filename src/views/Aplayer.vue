@@ -1,7 +1,5 @@
 <script>
 	//aplayer
-	// import 'APlayer/dist/APlayer.min.css';
-	// import APlayer from 'APlayer';
 	import 'aplayer/dist/APlayer.min.css';
 	import APlayer from 'aplayer';
 	import {

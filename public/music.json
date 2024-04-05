@@ -1,4 +1,18 @@
 [{
+	"name": "晴る",
+	"artist": "ヨルシカ",
+	"url": "/music/2114614108.mp3",
+	"cover": "http://p1.music.126.net/A2uvcfwP0zBfOfiR36Qiww==/109951169237033693.jpg?param=130y130",
+	"lrc": "/music/2114614108.lrc",
+	"id": "2114614108"
+},{
+	"name": "とげとげサディスティック",
+	"artist": "エノルミータ",
+	"url": "/music/2133253610.mp3",
+	"cover": "http://p1.music.126.net/VBktFHCcNLMzYIm_YGT4Rg==/109951169392553141.jpg?param=130y130",
+	"lrc": "/music/2133253610.lrc",
+	"id": "2133253610"
+},{
 	"name": "アンサンブル",
 	"artist": "TRUE",
 	"url": "/music/2074135554.mp3",
@@ -6,31 +20,10 @@
 	"lrc": "/music/2074135554.lrc",
 	"id": "2074135554"
 },{
-	"name": "小さな恋のうた",
-	"artist": "新垣結衣",
-	"url": "/music/29829683.mp3",
-	"cover": "http://p1.music.126.net/6zzWtkMnCAD4yxk_r4CUJA==/2528876746537476.jpg?param=130y130",
-	"lrc": "/music/29829683.lrc",
-	"id": "29829683"
-},{
 	"name": "Starlight Prologue",
 	"artist": "Liella!",
 	"url": "/music/1888667282.mp3",
 	"cover": "http://p1.music.126.net/tWCcfa7Z5W-CnhMSfOW_wQ==/109951168958540682.jpg?param=130y130",
 	"lrc": "/music/1888667282.lrc",
 	"id": "1888667282"
-},{
-	"name": "花の塔",
-	"artist": "さユり",
-	"url": "/music/1956534872.mp3",
-	"cover": "http://p1.music.126.net/fS_5RbP_4qg-RYreqp2tGg==/109951167558017839.jpg?param=130y130",
-	"lrc": "/music/1956534872.lrc",
-	"id": "1956534872"
-},{
-	"name": "わちゅごなどぅー",
-	"artist": "虹ヶ咲学園スクールアイドル同好会",
-	"url": "/music/2019529798.mp3",
-	"cover": "http://p1.music.126.net/h_Ry8sw930NcJBzvC25PcQ==/109951168281932933.jpg?param=130y130",
-	"lrc": "/music/2019529798.lrc",
-	"id": "2019529798"
 }]
