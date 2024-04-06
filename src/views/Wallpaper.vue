@@ -20,14 +20,20 @@
 		})
 	})
 
-	const dialogTableVisible = ref(false)
+	//图片是否预览
+	const showImagePreview = ref(false)
+	//图片预览的数据
 	const showUrl = ref([])
-	//点击图片预览
+	//预览
 	const showImg = (val) => {
-		console.log(val)
-		console.log(val.target.currentSrc)
-		dialogTableVisible.value = true
-		showUrl.value =val.target.currentSrc
+		showImagePreview.value = true
+		showUrl.value = [val.target.currentSrc]
+		console.log(showUrl.value)
+	}
+	//预览关闭
+	const closePreview = () => {
+		showUrl.value = []
+		showImagePreview.value = false
 	}
 </script>
 
@@ -35,13 +41,12 @@
 	<Waterfall :list="imageslist" :width="320">
 		<template #item="{ item, url, index }">
 			<div class="card">
-				<LazyImg :url="url" @click="showImg"/>
+				<LazyImg :url="url" @click="showImg" />
 			</div>
 		</template>
 	</Waterfall>
-	<el-dialog v-model="dialogTableVisible" title="" width="75%">
-		<el-image style="width: 100%; height: 60vh" :src="showUrl" fit="contain" />
-	</el-dialog>
+	<!-- 图片预览 -->
+	<el-image-viewer v-if="showImagePreview" @close="closePreview" :url-list="showUrl" />
 </template>
 
 <style scoped>
