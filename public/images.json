@@ -31,4 +31,10 @@
 }, {
 	"name": "image11",
 	"src": "/images/11.jpg"
+}, {
+	"name": "image12",
+	"src": "/images/12.jpg"
+}, {
+	"name": "image13",
+	"src": "/images/13.jpg"
 }]

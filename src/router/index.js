@@ -11,24 +11,25 @@ import LyriclistVue from '@/views/Lyriclist.vue'
 import LyricVue from '@/views/Lyric.vue'
 import WallpaperVue from '@/views/Wallpaper.vue'
 import TimelineVue from '@/views/Timeline.vue'
+import UnknownVue from '@/views/404.vue'
 
 //创建路由器
 const router = createRouter({
 	history: createWebHistory(),
 	routes: [{
-			path: '/index',
-			component: IndexVue,
-			meta: {
-				title: "首页 | Austur's博客"
-			}
-		},
-		{
+			// 	path: '/index',
+			// 	component: IndexVue,
+			// 	meta: {
+			// 		title: "首页 | Austur's博客"
+			// 	}
+			// },
+			// {
 			path: '/',
 			component: LayoutVue,
-			// redirect: '/index',
+			redirect: '/index',
 			//子路由
 			children: [{
-				path: '/',
+				path: '/index',
 				component: HomeVue,
 				meta: {
 					title: "主页 | Austur's博客"
@@ -39,7 +40,7 @@ const router = createRouter({
 				meta: {
 					title: "lyriclist | Austur's博客"
 				}
-			},{
+			}, {
 				path: '/lyric',
 				component: LyricVue,
 				meta: {
@@ -58,6 +59,20 @@ const router = createRouter({
 					title: "时间轴 | Austur's博客"
 				}
 			}]
+		},
+		// 404
+		{
+			path: '/404',
+			component: UnknownVue,
+			meta: {
+				title: "404 | Austur's博客"
+			}
+		},
+		// 未知路由重定向
+		{
+			path: '/:pathMatch(.*)',
+			redirect: '/404',
+			hidden: true
 		}
 	]
 })

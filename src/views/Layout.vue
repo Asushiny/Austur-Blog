@@ -11,7 +11,7 @@
 	import router from '@/router'
 	import aplayer from './Aplayer.vue'
 
-	//去到首页
+	//回到首页
 	const goIndex = (val) => {
 		router.push('/index')
 	}
@@ -27,6 +27,7 @@
 
 	//在组件被挂载之前被调用
 	const isLogin = ref()
+	const whatMenu = ref()
 	onBeforeMount(() => {
 		//判断是否已登录
 		let logining = localStorage.getItem('login');
@@ -47,8 +48,9 @@
 		} else {
 			isLogin.value = false
 			console.log('nologin')
-			// router.push('/index')
 		}
+		console.log('router',router.currentRoute.value.fullPath)
+		whatMenu.value = router.currentRoute.value.fullPath
 	})
 </script>
 
@@ -70,8 +72,8 @@
 			</el-header>
 			<el-container>
 				<el-aside>
-					<el-menu class="el-menu-vertical-demo menu" default-active="/" unique-opened router>
-						<el-menu-item index="/">
+					<el-menu class="el-menu-vertical-demo menu" :default-active="whatMenu" unique-opened router>
+						<el-menu-item index="/index">
 							<el-icon>
 								<House />
 							</el-icon>

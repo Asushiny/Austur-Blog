@@ -3,4 +3,8 @@ html.dark{
 		background-color: #262727;
 		color: aliceblue;
 	}
+	
+	.common-layout .waterfall-list{
+		background-color: #262727;
+	}
 }
