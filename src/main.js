@@ -12,7 +12,6 @@ import 'element-plus/theme-chalk/dark/css-vars.css'
 import './assets/dark.css'
 //导入element-plus所有图标
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
-
 //导入路由器
 import router from '@/router'
 //动态修改title

@@ -1,0 +1,202 @@
+{
+	"songName": "光るなら(若能绽放光芒)",
+	"singer": "Goose house(グースハウス)",
+	"synopsis": "《若能绽放光芒》（光るなら）是由Goose house乐队演唱的歌曲，作为日本动漫《四月是你的谎言》中的第一首片头曲，歌曲爽快的曲风令人炫目，以至于很多观众就是因为这首歌才开始接触到作品。该歌由Goose house为动画《四月是你的谎言》量身打造。",
+	"showRomanization": true,
+	"songWords": [{
+		"part": "Part1",
+		"text": "雨上（あめあ）がりの虹（にじ）も",
+		"romanization": "a me a ga ri no ni ji mo",
+		"translate": "雨过天晴的彩虹"
+	},{
+		"text": "凛（りん）と咲（さ）いた花（はな）も",
+		"romanization": "rin to sa i ta ha na mo",
+		"translate": "凛然绽放的花朵"
+	},{
+		"text": "色（いろ）づき溢（あふ）れ出（だ）す",
+		"romanization": "i ro zu ki a fu re da su",
+		"translate": "色彩随之满溢缤纷"
+	},{
+		"text": "茜色（あかねいろ）の空（そら） 仰（あお）ぐ君（きみ）に",
+		"romanization": "a ka ne i ro no so ra a o gu ki mi ni",
+		"translate": "望着那个仰望绯红色天空的你"
+	},{
+		"text": "あの日（ひ） 恋（こい）に落（お）ちた",
+		"romanization": "a no hi ko i ni o ti ta",
+		"translate": "就在那天 我坠入了爱河"
+	},{
+		"text": "瞬間（しゅんかん）のドラマチック",
+		"romanization": "syun kan no do ra ma ti kku",
+		"translate": "戏剧化的那一瞬间"
+	},{
+		"text": "フィルムの中（なか）の1（ひと）コマも",
+		"romanization": "fui ru mu no na ka no hi to ko ma mo",
+		"translate": "如荧幕中的特写镜头"
+	},{
+		"text": "消（き）えないよ 心（こころ）に刻（きざ）むから",
+		"romanization": "ki e na i yo ko ko ro ni ki za mu ka ra",
+		"translate": "早已深深铭刻在我心中 永远不会消失"
+	},{
+		"text": "君（きみ）だよ 君（きみ）なんだよ 教（おし）えてくれた",
+		"romanization": "ki mi da yo ki mi nan da yo o shi e te ku re ta",
+		"translate": "是你 是你 告诉我"
+	},{
+		"text": "暗闇（くらやみ）も光（ひか）るなら",
+		"romanization": "ku ra ya mi mo hi ka ru na ra",
+		"translate": "若能在黑暗中绽放光芒"
+	},{
+		"text": "星空（ほしぞら）になる",
+		"romanization": "ho shi zo ra ni na ru",
+		"translate": "是便能化作星空"
+	},{
+		"text": "悲（かな）しみを笑顔（えがお）に",
+		"romanization": "ka na shi mi wo e ga o ni",
+		"translate": "悲伤化作笑颜"
+	},{
+		"text": "もう隠（かく）さないで",
+		"romanization": "mou ka ku sa nai de",
+		"translate": "已经无需隐藏"
+	},{
+		"text": "煌（きら）めくどんな星（ほし）も",
+		"romanization": "ki ra me ku don na ho shi mo",
+		"translate": "漫天闪耀着的星光"
+	},{
+		"text": "君（きみ）を照（て）らすから",
+		"romanization": "ki mi wo te ra su ka ra",
+		"translate": "都会为你照亮前行"
+	},{
+		"part": "Part2",
+		"text": "眠（ねむ）りも忘（わす）れて 迎（むか）えた朝日（あさひ）が",
+		"romanization": "ne mu ri mo wa su re te mu ka e ta a sa hi ga",
+		"translate": "一夜未眠迎来的朝阳"
+	},{
+		"text": "やたらと突（つ）き刺（さ）さる",
+		"romanization": "ya ta ra to tsu ki sa sa ru",
+		"translate": "却愈加刺痛我心"
+	},{
+		"text": "低気圧（ていきあつ）運（はこ）ぶ 頭痛（ずつう）だって",
+		"romanization": "te i ki a tsu ha ko bu zu tsuu da tte",
+		"translate": "令人烦闷的头痛"
+	},{
+		"text": "忘（わす）れる 君（きみ）に会（あ）えば",
+		"romanization": "wa su re ru ki mi ni a e ba",
+		"translate": "只要见到你 便能瞬间遗忘"
+	},{
+		"text": "静寂（せいじゃく）はロマンティック",
+		"romanization": "se i jya ku wa ro man tei kku",
+		"translate": "静寂编制你我的罗曼史"
+	},{
+		"text": "紅茶（こうちゃ）に溶（と）けたシュガーのように",
+		"romanization": "kou tya ni to ke ta syu gaa no you ni",
+		"translate": "如红茶里融化的砂糖"
+	},{
+		"text": "全身（ぜんしん）に巡（めぐ）るよ 君（きみ）の声（こえ）",
+		"romanization": "zen shin ni me gu ru yo ki mi no ko e",
+		"translate": "你的声音萦绕全身"
+	},{
+		"text": "君（きみ）だよ 君（きみ）なんだよ",
+		"romanization": "ki mi da yo ki mi nan da yo",
+		"translate": "是你 是你"
+	},{
+		"text": "笑顔（えがお）をくれた",
+		"romanization": "e ga o wo ku re ta",
+		"translate": "带给我笑容"
+	},{
+		"text": "涙（なみだ）も光（ひか）るなら",
+		"romanization": "na mi da mo hi ka ru na ra",
+		"translate": "泪滴若能绽放光芒"
+	},{
+		"text": "流星（りゅうせい）になる",
+		"romanization": "ryuu se i ni na ru",
+		"translate": "便能化作流星"
+	},{
+		"text": "傷（きず）付（つ）いたその手（て）を",
+		"romanization": "ki zu tsu i ta so no te o",
+		"translate": "这伤痕累累的双手"
+	},{
+		"text": "もう離（はな）さないで",
+		"romanization": "mo u ha na sa nai de",
+		"translate": "请别再松开"
+	},{
+		"text": "願（ねが）いを込（こ）めた空（そら）に",
+		"romanization": "ne ga i o ko me te so ra ni",
+		"translate": "寄托心愿的天空"
+	},{
+		"text": "明日（あした）が来（く）るから",
+		"romanization": "a shi ta ga ku ru ka ra",
+		"translate": "明天一定会来到"
+	},{
+		"part": "Part3",
+		"text": "導（みちび）いてくれた 光（ひかり）は 君（きみ）だよ",
+		"romanization": "mi chi bi i te ku re ta hi ka ri wa ki mi da yo",
+		"translate": "指引着我前进的光芒 就是你啊"
+	},{
+		"text": "つられて僕（ぼく）も 走（はし）り出（だ）した",
+		"romanization": "tsu ra re te no ku mo ha shi ri da shi ta",
+		"translate": "我也不禁迈步奔向前方"
+	},{
+		"text": "知（し）らぬ間（ま）に クロスし始（はじ）めた",
+		"romanization": "shi ra nu ma ni ku ro su shi ha ji me ta",
+		"translate": "不知不觉间 我们交织在一起"
+	},{
+		"text": "ほら 今（いま）だ ここで 光（ひか）るなら",
+		"romanization": "ho ra i ma da ko ko de hi ka ru na ra",
+		"translate": "看 就是现在 若此处有光芒"
+	},{
+		"text": "君（きみ）だよ 君（きみ）なんだよ 教（おし）えてくれた",
+		"romanization": "ki mi da yo ki mi nan da yo o shi e te ku re ta",
+		"translate": "是你 是你 告诉我"
+	},{
+		"text": "暗闇（くらやみ）は終（お）わるから",
+		"romanization": "ku ra ya mi wa o wa ru ka ra",
+		"translate": "黑暗终究会过去"
+	},{
+		"text": "君（きみ）だよ 君（きみ）なんだよ 教（おし）えてくれた",
+		"romanization": "ki mi da yo ki mi nan da yo o shi e te ku re ta",
+		"translate": "是你 是你 告诉我"
+	},{
+		"text": "暗闇（くらやみ）も光（ひか）るなら",
+		"romanization": "ku ra ya mi mo hi ka ru na ra",
+		"translate": "若能在黑暗中绽放光芒"
+	},{
+		"text": "星空（ほしぞら）になる",
+		"romanization": "ho shi zo ra ni na ru",
+		"translate": "便能化作星空"
+	},{
+		"text": "悲（かな）しみを笑顔（えがお）に",
+		"romanization": "ka na shi mi wo e ga o ni",
+		"translate": "悲伤化作笑颜"
+	},{
+		"text": "もう隠（かく）さないで",
+		"romanization": "mou ka ku sa na i de",
+		"translate": "已经无需隐藏"
+	},{
+		"text": "煌（きら）めくどんな星（ほし）も",
+		"romanization": "ki ra me ku don na ho shi mo",
+		"translate": "漫天闪耀着的星光"
+	},{
+		"text": "君（きみ）を照（て）らすから",
+		"romanization": "ki mi wo te ra su ka ra",
+		"translate": "都会为你照亮前行"
+	},{
+		"text": "答（こた）えはいつでも偶然（ぐうぜん）？必然（ひつぜん）？",
+		"romanization": "ko ta e wa i tsu de mo gun zen hi tsu zen",
+		"translate": "答案是 偶然？必然？"
+	},{
+		"text": "いつか選（えら）んだ道（みち）こそ",
+		"romanization": "i tsu ka e ran da mi ti ko so",
+		"translate": "你曾经选择的路"
+	},{
+		"text": "運命（うんめい）になる",
+		"romanization": "u n mei ni na ru",
+		"translate": "才是真正的命运"
+	},{
+		"text": "握（にぎ）りしめた その希望（きぼう）も不安（ふあん）も",
+		"romanization": "ni gi ri shi me ta so no ki bou mo fu an mo",
+		"translate": "紧握在手心的希望也好 不安也罢"
+	},{
+		"text": "きっと2人（ふたり）を動（うご）かす 光（ひかり）になるから",
+		"romanization": "ki tto fu ta ri o u go ka su hi ka ri ni na ru ka ra",
+		"translate": "必定会化作驱使我们前进的光芒"
+	}]
+}

@@ -1,240 +1,136 @@
 {
-	"songName": "喜剧",
-	"singer": "星野源(Hoshino Gen)",
-	"synopsis": "《喜剧》是日本男歌手星野源作词、作曲、演唱的一首歌曲。于2022年4月8日发行。该曲也是日本电视动画《间谍×过家家》的片尾曲。",
-	"showRomanization": true,
+	"songName": "小小恋歌",
+	"singer": "Mongol800 (モンゴル800)",
+	"synopsis": "《小小恋歌》（小さな恋のうた）是2001年日本乐团MONGOL800的一首代表性歌曲，收录于第2张录音室专辑《MESSAGE》中。2007年被用作由山下智久和长泽雅美主演的人气富士月九剧《求婚大作战》的插曲而再一次掀起热潮。",
+	"showRomanization": "false",
 	"songWords": [{
 		"part": "Part1",
-		"text": "争(あらそ)い合（あ）って 壊（こわ）れかかった",
-		"romanization": "a ra so i a tte ko wa re ka ka tta",
-		"translate": "互相争斗临近崩溃"
+		"text": "広(ひろ)い宇宙(うちゅう)の数(かず)ある一(ひと)つ",
+		"translate": "在无垠宇宙中那独一无二的"
 	},{
-		"text": "このお茶（ちゃ）目（め）な星（ほし）で",
-		"romanization": "ko no o cha me na ho shi de",
-		"translate": "在那调皮的繁星中"
+		"text": "青(あお)い地球(ちきゅう)の広(ひろ)い世界(せかい)で",
+		"translate": "蓝色地球的广阔世界里"
 	},{
-		"text": "生（う）まれ落（お）ちた日（ひ）から よそ者（もの）",
-		"romanization": "u ma re o chi ta hi ka ra yo so mo no",
-		"translate": "自出生便格格不入"
+		"text": "小(ち)さな恋(こい)の思(おも)いは届(とど)く",
+		"translate": "将小小的恋曲送到"
 	},{
-		"text": "涙（なみだ）枯（か）れ果（は）てた",
-		"romanization": "na mi da ka re ha te tao",
-		"translate": "泪水定格在眼中"
+		"text": "小(ち)さな岛(しま)のあなたのもとへ",
+		"translate": "小岛上的你身边"
 	},{
-		"text": "帰（かえ）りゆく場所（ばしょ）は夢（ゆめ）の中（なか）",
-		"romanization": "ka e ri yu ku ba sho wa yu me no na ka",
-		"translate": "在梦中觅得归处"
+		"text": "あなたと出会(であい)い时(とき)は流(なが)れる",
+		"translate": "和你邂逅 时间流逝"
 	},{
-		"text": "零（こぼ）れ落（お）ちた 先（さき）で出会（であ）った",
-		"romanization": "ko bo re o chi ta sa ki de de a tta",
-		"translate": "在零落之地相遇"
+		"text": "思(おも)いを込(こ)めた手纸(てがみ)もふえる",
+		"translate": "装有思念的信也随之增加"
 	},{
-		"text": "ただ秘密（ひみつ）を抱（かか）え",
-		"romanization": "ta da hi mi tsu wo ka ka e",
-		"translate": "只是守着秘密"
+		"text": "いつしか二人(ふたり) 互(たが)いに响(ひび)く",
+		"translate": "不觉间两人互相回应"
 	},{
-		"text": "普通（ふつう）のふりをした あなたと",
-		"romanization": "fu tsu u no fu ri wo shi ta a na ta to",
-		"translate": "和装作普通的你"
+		"text": "时(とき)に激(はげ)しく时(とき)に切(せつ)なく",
+		"translate": "时而激动 时而难过"
 	},{
-		"text": "探（さが）し諦（あきら）めた",
-		"romanization": "sa ga shi a ki ra me ta",
-		"translate": "我放弃寻觅"
+		"text": "响(ひび)きは远(とお)く遥(はる)か彼方(かなた)へ",
+		"translate": "这声音朝向遥远的彼方"
 	},{
-		"text": "私（わたし）の居場所（いばしょ）は作（つく）るものだった",
-		"romanization": "wa ta shi no i ba sho wa tsu ku ru mo no da tta",
-		"translate": "创造出容身之地"
+		"text": "やさしい歌(うた)は世界(せかい)を変(かわ)える",
+		"translate": "温柔的歌 正在把世界改变"
 	},{
-		"text": "あの日（ひ）交（か）わした",
-		"romanization": "a no hi ka wa shi ta",
-		"translate": "那天彼此交换了"
+		"text": "ほらあなたにとって大事(だいじ)な人(ひと)ほど",
+		"translate": "看，那个对你而言最重要的人"
 	},{
-		"text": "血（ち）に勝（まさ）るもの",
-		"romanization": "chi ni ma sa ru mo no",
-		"translate": "胜过血脉的东西"
+		"text": "すぐそばにいるの",
+		"translate": "会立刻赶往你身边"
 	},{
-		"text": "心（こころ）たちの契約（けいやく）を",
-		"romanization": "ko ko ro ta chi no ke i ya ku wo",
-		"translate": "签订心灵的契约"
+		"text": "ただあなたにだけ届(とど)いて欲(ほ)しい",
+		"translate": "只是想传达给你"
+	},{
+		"text": "响(ひび)け恋(こい)の歌(うた)",
+		"translate": "这首回响的恋曲"
+	},{
+		"text": "ほら ほらほら响(ひび)け恋(こい)の歌(うた)",
+		"translate": "看，这回响着的恋曲"
 	},{
 		"part": "Part2",
-		"text": "手（て）を繋（つな）ぎ帰（かえ）ろうか",
-		"romanization": "te wo tsu na gi ka e ro u ka",
-		"translate": "让我们手牵手一起回家吧"
+		"text": "あなたは気(く)づく二人(ふたり)は歩(ある)く",
+		"translate": "你忽然发现 若是两人并肩而行"
 	},{
-		"text": "今日（きょう）は何（なに）食（た）べようか",
-		"romanization": "kyo u wa na ni ta be yo u ka",
-		"translate": "今天吃什么好呢"
+		"text": "暗(くら)い道(みち)でも日々(ひび)照(て)らす月(つき)",
+		"translate": "即使是昏暗的街道 也有每日照耀的月"
 	},{
-		"text": "「こんなことがあった」って",
-		"romanization": "「ko n na ko to ga a tta」tte",
-		"translate": "“发生过这样的事情”"
+		"text": "握(にぎ)りしめた手(て) 离(はな)すことなく",
+		"translate": "紧握的手 不会放开"
 	},{
-		"text": "君（きみ）と話（はな）したかったんだ",
-		"romanization": "ki mi to ha na shi ta ka tta n da",
-		"translate": "我想和你谈谈"
+		"text": "思(おも)いは强(つよ)く永远(えいえん)誓(ちか)う",
+		"translate": "思念是坚强的永恒誓言"
 	},{
-		"text": "いつの日（ひ）も  君（きみ）となら喜劇（きげき）よ",
-		"romanization": "i tsu no hi mo ki mi to na ra ki ge ki yo",
-		"translate": "无论哪一天 和你在一起就是喜剧"
+		"text": "永远(えいえん)の渊(ふち) きっと仆(ぼく)は言(い)う",
+		"translate": "亘古的深渊 一定如我所说"
 	},{
-		"text": "踊（おど）る軋（きし）むベッドで",
-		"romanization": "o do ru ki shi mu bed do de",
-		"translate": "在吱吱作响的床上跳舞"
+		"text": "思(おも)い変(か)わらず同(おな)じ言叶(こたば)を",
+		"translate": "这不变的思念相同的语言"
 	},{
-		"text": "笑（わら）い転（ころ）げたままで",
-		"romanization": "wa ra i ko ro ge ta ma ma de",
-		"translate": "笑得前仰后合"
+		"text": "それでも足(た)りず",
+		"translate": "尽管如此也不够"
 	},{
-		"text": "ふざけた生活（せいかつ）はつづくさ",
-		"romanization": "fu za ke ta se i ka tsu wa tsu zu ku sa",
-		"translate": "有趣的生活仍在继续"
+		"text": "涙(なみだ)にかわり喜(よろこ)びになり",
+		"translate": "要将眼泪变化成喜悦"
+	},{
+		"text": "言叶(言叶)にできず",
+		"translate": "无法言说"
+	},{
+		"text": "ただ抱(だ)きしめるただ抱(だ)きしめる",
+		"translate": "只想抱着你 只想抱着你"
+	},{
+		"text": "ほらあなたにとって大事(だいじ)な人(ひと)ほど",
+		"translate": "看，那个对你而言最重要的人"
+	},{
+		"text": "すぐそばにいるの",
+		"translate": "会立刻赶往你身边"
+	},{
+		"text": "ただあなたにだけ届(とど)いて欲(ほ)しい",
+		"translate": "只是想传达给你"
+	},{
+		"text": "响(ひび)け恋(こい)の歌(うた)",
+		"translate": "这首回响的恋曲"
+	},{
+		"text": "ほら ほらほら响(ひび)け恋(こい)の歌(うた)",
+		"translate": "看，这回响着的恋曲"
 	},{
 		"part": "Part3",
-		"text": "劣（おと）ってると 言（い）われ育（そだ）った",
-		"romanization": "o to tte ru to i wa re so da tta",
-		"translate": "伴随着“劣等”一词成长"
+		"text": "梦(ゆめ)ならば覚(さ)めないで",
+		"translate": "若这是梦境请不要让我醒来"
 	},{
-		"text": "このいかれた星（ほし）で",
-		"romanization": "ko no i ka re ta ho shi de",
-		"translate": "身居这颗疯狂的星球"
+		"text": "梦(ゆめ)ならば覚(さ)めないで",
+		"translate": "若这是梦境请不要让我醒来"
 	},{
-		"text": "普通（ふつう）のふりをして 気（き）づいた",
-		"romanization": "fu tsu u no fu ri wo shi te ki zu i ta",
-		"translate": "我装出一副普通的模样"
+		"text": "あなたと过(す)ごした时(とき) 永远(えいえん)の星(ほし)となる",
+		"translate": "与你共度的时间 会成为永恒的星"
 	},{
-		"text": "誰（だれ）が決（き）めつけた",
-		"romanization": "da re ga ki me tsu ke ta",
-		"translate": "又有谁能定义"
+		"text": "ほらあなたにとって大事(だいじ)な人(ひと)ほど",
+		"translate": "看，那个对你而言最重要的人"
 	},{
-		"text": "私（わたし）の光（ひかり）はただ此処（ここ）にあった",
-		"romanization": "wa ta shi no hi ka ri wa ta da ko ko ni a tta",
-		"translate": "我拥有的光芒只在此地"
+		"text": "すぐそばにいるの",
+		"translate": "会立刻赶往你身边"
 	},{
-		"text": "あの日（ひ）ほどけた",
-		"romanization": "a no hi ho do ke ta",
-		"translate": "在那天破解了"
+		"text": "ただあなたにだけ届(とど)いて欲(ほ)しい",
+		"translate": "只是想传达给你"
 	},{
-		"text": "淡（あわ）い呪（のろ）いに",
-		"romanization": "a wa i no ro i ni",
-		"translate": "淡淡的诅咒"
+		"text": "响(ひび)け恋(こい)の歌(うた)",
+		"translate": "这首回响的恋曲"
 	},{
-		"text": "心（こころ）からのさよならを",
-		"romanization": "ko ko ro ka ra no sa yo na ra wo",
-		"translate": "向其由衷告别"
+		"text": "ほらあなたにとって大事(だいじ)な人(ひと)ほど",
+		"translate": "看，那个对你而言最重要的人"
 	},{
-		"part": "Part4",
-		"text": "顔上（かおあげ）げて帰（かえ）ろうか",
-		"romanization": "ka o a ge te ka e ro u ka",
-		"translate": "让我们抬着头一起回家吧"
+		"text": "すぐそばにいるの",
+		"translate": "会立刻赶往你身边"
 	},{
-		"text": "咲（さ）き誇（ほこ）る花々（はなばな）",
-		"romanization": "sa ki ho ko ru ha na ba na",
-		"translate": "目光所及为繁花烂漫"
+		"text": "ただあなたにだけ届(とど)いて欲(ほ)しい",
+		"translate": "只是想传达给你"
 	},{
-		"text": "「こんな綺麗（きれい）なんだ」って",
-		"romanization": "「ko n na ki re i na n da」tte",
-		"translate": "“这么漂亮呀”"
+		"text": "响(ひび)け恋(こい)の歌(うた)",
+		"translate": "这首回响的恋曲"
 	},{
-		"text": "君（きみ）と話（はな）したかったんだ",
-		"romanization": "ki mi to ha na shi ta ka tta n da",
-		"translate": "我想和你谈谈"
-	},{
-		"text": "どんな日（ひ）も",
-		"romanization": "「do n na hi mo",
-		"translate": "在每一天"
-	},{
-		"text": "君（きみ）といる奇跡（きせき）を 命繋（いのちつな）ぐキッチンで",
-		"romanization": "ki mi to i ru ki se ki wo i no chi tsu na gu kic chi n de",
-		"translate": "与你共同创造奇迹"
-	},{
-		"text": "伝（つた）えきれないままで",
-		"romanization": "tsu ta e ki re na i ma ma de",
-		"translate": "心意仍无法传达"
-	},{
-		"text": "ふざけた生活（せいかつ）はつづく",
-		"romanization": "fu za ke ta se i ka tsu wa tsu zu ku",
-		"translate": "嬉闹的生活仍在继续"
-	},{
-		"text": "仕事（しごと）明（あ）けに",
-		"romanization": "shi go to a ke ni",
-		"translate": "下班之后"
-	},{
-		"text": "歩（あゆ）む共（とも）に",
-		"romanization": "a yu mu to mo ni",
-		"translate": "一起走呀"
-	},{
-		"text": "朝陽（あさひ）が登（のぼ）るわ ああ",
-		"romanization": "a sa hi ga no bo ru wa a a",
-		"translate": "朝阳要升起啦"
-	},{
-		"text": "ありがとうでは",
-		"romanization": "a ri ga to u de wa",
-		"translate": "谢谢啦"
-	},{
-		"text": "足（た）りないから",
-		"romanization": "ta ri na i ka ra",
-		"translate": "因为还不够"
-	},{
-		"text": "手（て）を繋（つな）ぎ",
-		"romanization": "te wo tsu na gi",
-		"translate": "那就手牵着手吧"
-	},{
-		"part": "Part5",
-		"text": "さあうちに帰（かえ）ろうか",
-		"romanization": "sa a u chi ni ka e ro u ka",
-		"translate": "让我们手牵手一起回家吧"
-	},{
-		"text": "今日（きょう）は何（なに）食（た）べようか",
-		"romanization": "kyo u wa na ni ta be yo u ka",
-		"translate": "今天吃什么好呢"
-	},{
-		"text": "「こんなことがあった」って",
-		"romanization": "「ko n na ko to ga a tta」tte",
-		"translate": "“发生过这样的事情”"
-	},{
-		"text": "君（きみ）と話（はな）したかったんだ",
-		"romanization": "ki mi to ha na shi ta ka tta n da",
-		"translate": "我想和你谈谈"
-	},{
-		"text": "いつの日（ひ）も 君（きみ）となら喜劇（きげき）よ",
-		"romanization": "i tsu no hi mo ki mi to na ra ki ge ki yo",
-		"translate": "无论哪一天 和你在一起就是喜剧"
-	},{
-		"text": "踊（おど）る軋（きし）むベッドで",
-		"romanization": "o do ru ki shi mu bed do de",
-		"translate": "在吱吱作响的床上跳舞"
-	},{
-		"text": "笑（わら）い転（ころ）げたままで 永遠（えいえん）を探（さが）そうか",
-		"romanization": "wa ra i ko ro ge ta ma ma de e i e n wo sa ga so u ka",
-		"translate": "尽情绽放笑容吧 寻找永恒吧"
-	},{
-		"text": "できるだけ暮（く）らそうか",
-		"romanization": "de ki ru da ke ku ra so u ka",
-		"translate": "尽可能地生活吧"
-	},{
-		"text": "どんなことがあったって",
-		"romanization": "do n na ko to ga a tta tte",
-		"translate": "无论发生了什么"
-	},{
-		"text": "君（きみ）と話（はな）したかったんだ",
-		"romanization": "ki mi to ha na shi ta ka tta n da",
-		"translate": "我都想和你谈谈"
-	},{
-		"text": "いつまでも 君（きみ）となら喜劇（きげき）よ",
-		"romanization": "i tsu ma de mo ki mi to na ra ki ge ki yo",
-		"translate": "永远和你在一起就是喜剧"
-	},{
-		"text": "分（わ）かち合（あ）えた日々（ひび）に",
-		"romanization": "wa ka chi a e ta hi bi ni",
-		"translate": "在每个能够分享的日子里"
-	},{
-		"text": "笑（わらい）し転（ころ）げた先（さき）に",
-		"romanization": "wa ra i ko ro ge ta sa ki ni",
-		"translate": "笑得前仰后合"
-	},{
-		"text": "ふざけた生活（せいかつ）はつづくさ",
-		"romanization": "fu za ke ta se i ka tsu wa tsu zu ku sa",
-		"translate": "嬉闹生活还在继续"
+		"text": "ほら ほらほら响(ひび)け恋(こい)の歌(うた)",
+		"translate": "看，这回响着的恋曲"
 	}]
 }

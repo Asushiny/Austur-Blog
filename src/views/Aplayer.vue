@@ -39,7 +39,7 @@
 <style scoped>
 	#aplayer {
 		width: 50%;
-		min-width: 600px;
+		min-width: 425px;
 		position: absolute;
 		bottom: 0;
 	}

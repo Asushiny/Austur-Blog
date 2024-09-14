@@ -4,9 +4,8 @@ import {
 } from 'vue-router'
 
 //导入组件
-import IndexVue from '@/views/Index.vue'
 import LayoutVue from '@/views/Layout.vue'
-import HomeVue from '@/views/Home.vue'
+import IndexVue from '@/views/Index.vue'
 import LyriclistVue from '@/views/Lyriclist.vue'
 import LyricVue from '@/views/Lyric.vue'
 import WallpaperVue from '@/views/Wallpaper.vue'
@@ -16,21 +15,15 @@ import UnknownVue from '@/views/404.vue'
 //创建路由器
 const router = createRouter({
 	history: createWebHistory(),
+	linkActiveClass:"router-active",
 	routes: [{
-			// 	path: '/index',
-			// 	component: IndexVue,
-			// 	meta: {
-			// 		title: "首页 | Austur's博客"
-			// 	}
-			// },
-			// {
 			path: '/',
 			component: LayoutVue,
 			redirect: '/index',
 			//子路由
 			children: [{
 				path: '/index',
-				component: HomeVue,
+				component: IndexVue,
 				meta: {
 					title: "主页 | Austur's博客"
 				}

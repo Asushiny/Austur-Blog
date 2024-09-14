@@ -3,9 +3,9 @@
 </script>
 
 <template>
-	<el-scrollbar>
+	<!-- <el-scrollbar> -->
 	<router-view v-wechat-title='$route.meta.title'></router-view>
-	</el-scrollbar>
+	<!-- </el-scrollbar> -->
 </template>
 
 <style scoped>

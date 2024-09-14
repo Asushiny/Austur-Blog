@@ -23,29 +23,19 @@
 
 	const tableData : User[] = [
 		{
+			songName: 'LOVE 2000',
+			singer: 'hitomi',
+			id: 1
+		},
+		{
 			songName: '小小恋歌',
 			singer: 'Mongol800 (モンゴル800)',
-			id: 1
+			id: 2
 		},
 		{
 			songName: '喜剧',
 			singer: '星野源(Hoshino Gen)',
-			id: 2
-		},
-		{
-			songName: '花の塔',
-			singer: '酸欠少女さユり',
 			id: 3
-		},
-		{
-			songName: 'Hectopascal',
-			singer: '寿美菜子/高田憂希',
-			id: 4
-		},
-		{
-			songName: '光るなら(若能绽放光芒)',
-			singer: 'Goose house (グースハウス)',
-			id: 5
 		},
 	]
 </script>

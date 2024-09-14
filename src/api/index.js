@@ -2,15 +2,6 @@ import {request} from "./request.js"
 
 //http://127.0.0.1:5173
 
-//登录
-export function getLogin(){
-	return request({
-		url: '/login.json',
-		methods: 'post',
-		responseType:'json'
-	})
-}
-
 //音乐
 export function getMusic(){
 	return request({
