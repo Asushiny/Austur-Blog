@@ -1,13 +1,58 @@
 [{
 	"name": "image1",
-	"src": "/images/1.jpg"
+	"src": "/images/1.png"
 }, {
 	"name": "image2",
-	"src": "/images/2.jpg"
+	"src": "/images/2.png"
 }, {
 	"name": "image3",
-	"src": "/images/3.jpg"
+	"src": "/images/3.png"
 }, {
 	"name": "image4",
-	"src": "/images/4.jpg"
+	"src": "/images/4.png"
+}, {
+	"name": "image5",
+	"src": "/images/5.png"
+}, {
+	"name": "image6",
+	"src": "/images/6.png"
+}, {
+	"name": "image7",
+	"src": "/images/7.png"
+}, {
+	"name": "image8",
+	"src": "/images/8.png"
+}, {
+	"name": "image9",
+	"src": "/images/9.png"
+}, {
+	"name": "image10",
+	"src": "/images/10.png"
+}, {
+	"name": "image11",
+	"src": "/images/11.png"
+}, {
+	"name": "image12",
+	"src": "/images/12.png"
+}, {
+	"name": "image13",
+	"src": "/images/13.png"
+}, {
+	"name": "image14",
+	"src": "/images/14.png"
+}, {
+	"name": "image15",
+	"src": "/images/15.png"
+}, {
+	"name": "image16",
+	"src": "/images/16.png"
+}, {
+	"name": "image17",
+	"src": "/images/17.png"
+}, {
+	"name": "image18",
+	"src": "/images/18.png"
+}, {
+	"name": "image19",
+	"src": "/images/19.png"
 }]
