@@ -25,7 +25,8 @@
 						listFolded: true,
 						listMaxHeight: 90,
 						lrcType: 3,
-						audio: this.audio
+						audio: this.audio,
+						fixed: true,
 					})
 				})
 			}
@@ -38,9 +39,10 @@
 
 <style scoped>
 	#aplayer {
-		width: 50%;
-		min-width: 425px;
-		position: absolute;
-		bottom: 0;
+		/* width: 50px; */
+		/* height: 50px; */
+		/* min-width: 425px; */
+		/* position: absolute; */
+		/* bottom: 0; */
 	}
 </style>

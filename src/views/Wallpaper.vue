@@ -1,7 +1,8 @@
 <script setup>
 	import {
 		ref,
-		onBeforeMount
+		onBeforeMount,
+		onMounted
 	} from 'vue'
 	import {
 		LazyImg,
