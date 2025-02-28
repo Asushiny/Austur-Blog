@@ -1,0 +1,190 @@
+{
+	"songName": "LOVE 2000",
+	"singer": "hitomi",
+	"synopsis": "八奈見杏菜（cv：遠野ひかる）（《败犬女主太多了》ed1）",
+	"showRomanization": true,
+	"songWords": [{
+		"part": "Part1",
+		"text": "愛はどこからやってくるのでしょう？",
+		"romanization": "a i wa do ko ka ra ya tte ku ru no de sho u",
+		"translate": "爱究竟从何而来呢？"
+	},{
+		"text": "自分の胸に問いかけた",
+		"romanization": "ji bu n no mu ne ni to i ka ke ta",
+		"translate": "向自己的内心如此问询着"
+	},{
+		"text": "ニセモノなんか興味はないの",
+		"romanization": "ni se mo no na n ka kyo u mi wa na i no",
+		"translate": "我对虚情假意毫无兴趣"
+	},{
+		"text": "ホントだけを見つめたい",
+		"romanization": "ho n to da ke wo mi tsu me ta i",
+		"translate": "只愿能够寻得真心"
+	},{
+		"text": "悲しい NEWS と どうでもいい話",
+		"romanization": "ka na shi i NEWS to do u de mo i i ha na shi",
+		"translate": "悲伤的新闻与无关紧要的事情"
+	},{
+		"text": "朝からもうそんなのうんざりで",
+		"romanization": "a sa ka ra mo u so n na no u n za ri de",
+		"translate": "自清晨时便已厌倦"
+	},{
+		"text": "今日はいつもよりも",
+		"romanization": "kyo u wa i tsu mo yo ri mo",
+		"translate": "因为今日较平素而言"
+	},{
+		"text": "風が気持ちイイからネ",
+		"romanization": "ka ze ga ki mo chi i i ka ra ne",
+		"translate": "清风更为舒心"
+	},{
+		"text": "楽しさに着替えてネ",
+		"romanization": "ta no shi sa ni ki ga e te ne",
+		"translate": "那就换上好心情吧"
+	},{
+		"text": "気づけなかった",
+		"romanization": "ki zu ke na ka tta",
+		"translate": "不曾注意到"
+	},{
+		"text": "きっと甘えてたのかな",
+		"romanization": "ki tto a ma e te ta no ka na",
+		"translate": "想必是在撒娇吧"
+	},{
+		"text": "だから自分愛して人を愛して~  みたいの",
+		"romanization": "da ka ra ji bu n'a i shi te hi to wo a i shi te ~  mi ta i no",
+		"translate": "所以想要试着爱自己和身边的人"
+	},{
+		"text": "夢はいつでも膨らむばかりで",
+		"romanization": "yu me wa i tsu de mo fu ku ra mu ba ka ri de",
+		"translate": "梦想总是不断膨胀"
+	},{
+		"text": "誰かの思いを無視してた",
+		"romanization": "da re ka no o mo i wo mu shi shi te ta",
+		"translate": "他人的想法因此枉顾"
+	},{
+		"text": "きっといつかはわかってるのかナ？",
+		"romanization": "ki tto i tsu ka wa wa ka tte ru no ka na",
+		"translate": "终有一天能知晓吗？"
+	},{
+		"text": "手放した風船飛んでった",
+		"romanization": "te ba na shi ta fu u se n to n de tta",
+		"translate": "放手的气球飞向空中"
+	},{
+		"part": "Part2",
+		"text": "サバよんでみたって",
+		"romanization": "sa ba yo n de mi ta tte",
+		"translate": "就算把自己年龄说轻"
+	},{
+		"text": "あの頃に戻れやしないし",
+		"romanization": "a no ko ro ni mo do re ya shi na i shi",
+		"translate": "那段日子也再回不去"
+	},{
+		"text": "だから今を認めていたいの",
+		"romanization": "da ka ra i ma wo mi to me te i ta i no",
+		"translate": "所以想要认可当下啊"
+	},{
+		"text": "とても大切な事も",
+		"romanization": "to te mo ta i se tsu na ko to mo",
+		"translate": "即便最为重要的事情"
+	},{
+		"text": "見過ごしちゃったとしても",
+		"romanization": "mi su go shi cha tta to shi te mo",
+		"translate": "就算与之擦肩而过"
+	},{
+		"text": "また見つければイイ",
+		"romanization": "ma ta mi tsu ke re ba i i",
+		"translate": "那再去找到就好了"
+	},{
+		"text": "いつも言ってたネ",
+		"romanization": "i tsu mo i tte ta ne",
+		"translate": "你总是说着"
+	},{
+		"text": "[まァ どうにかなるって]",
+		"romanization": "[ma a do u ni ka na ru tte]",
+		"translate": "[嘛 ‘车到山前必有路’]"
+	},{
+		"text": "だけど力まかせじゃ",
+		"romanization": "da ke do chi ka ra ma ka se ja",
+		"translate": "然而 即便竭尽所能"
+	},{
+		"text": "どうにもならない事もアル",
+		"romanization": "do u ni mo na ra na i ko to mo a ru",
+		"translate": "还是有无可奈何的事情"
+	},{
+		"text": "愛はどこからやってくるのでしょう？",
+		"romanization": "a i wa do ko ka ra ya tte ku ru no de sho u",
+		"translate": "爱究竟从何而来呢？"
+	},{
+		"text": "自分の胸に問いかけた",
+		"romanization": "ji bu n no mu ne ni to i ka ke ta",
+		"translate": "向自己的内心如此问询着"
+	},{
+		"text": "少しずつだけどいろんな事が",
+		"romanization": "su ko shi zu tsu da ke do i ro n na ko to ga",
+		"translate": "些微点滴积累了多少"
+	},{
+		"text": "変わって 私はここにアル？",
+		"romanization": "ka wa tte wa ta shi wa ko ko ni a ru",
+		"translate": "才渐渐改变 造就存在于此的我？"
+	},{
+		"part": "Part3",
+		"text": "こんなハズじゃなかった？",
+		"romanization": "ko n na ha zu ja na ka tta",
+		"translate": "怎该如此呢？"
+	},{
+		"text": "とんだオトギ話",
+		"romanization": "to n da o to gi ha na shi",
+		"translate": "荒唐的天方夜谭"
+	},{
+		"text": "なぞなぞみたいな 愛す事の意味は？",
+		"romanization": "na zo na zo mi ta i na a i su ko to no i mi wa",
+		"translate": "扑朔迷离、谜团一样 爱的意义究竟是什么？"
+	},{
+		"text": "運命だけじゃなくて",
+		"romanization": "u n me i da ke ja na ku te",
+		"translate": "不单是命运使然"
+	},{
+		"text": "センチメンタルでもなくて",
+		"romanization": "se n chi me n ta ru de mo na ku te",
+		"translate": "也并非多愁善感所致"
+	},{
+		"text": "強く見えないモノかナ",
+		"romanization": "tsu yo ku mi e na i mo no ka na",
+		"translate": "似是某种强烈的东西呢"
+	},{
+		"text": "愛はどこからやってくるのでしょう？",
+		"romanization": "a i wa do ko ka ra ya tte ku ru no de sho u",
+		"translate": "爱究竟从何而来呢？"
+	},{
+		"text": "自分の胸に問いかけた",
+		"romanization": "ji bu n no mu ne ni to i ka ke ta",
+		"translate": "向自己的内心如此问询着"
+	},{
+		"text": "食べてみなくちゃわからない事",
+		"romanization": "ta be te mi na ku cha wa ka ra na i ko to",
+		"translate": "不亲自尝尝其中滋味便不会明白"
+	},{
+		"text": "出会いの引力はどれほどか",
+		"romanization": "de a i no i n ryo ku wa do re ho do ka",
+		"translate": "相遇的引力究竟有多强"
+	},{
+		"text": "愛はどこからやってくるのでしょう？",
+		"romanization": "a i wa do ko ka ra ya tte ku ru no de sho u",
+		"translate": "爱究竟从何而来呢？"
+	},{
+		"text": "自分の胸に問いかけた",
+		"romanization": "ji bu n no mu ne ni to i ka ke ta",
+		"translate": "向自己的内心如此问询着"
+	},{
+		"text": "ニセモノなんか興味はないワ",
+		"romanization": "ni se mo no na n ka kyo u mi wa na i wa",
+		"translate": "我对虚情假意毫无兴趣"
+	},{
+		"text": "ホンモノだけ見つけたい",
+		"romanization": "ho n mo no da ke mi tsu ke ta i",
+		"translate": "只愿能够寻得真心"
+	},{
+		"text": "あなたをずっと探してた",
+		"romanization": "a na ta wo zu tto sa ga shi te ta",
+		"translate": "我始终在寻觅着你"
+	}]
+}

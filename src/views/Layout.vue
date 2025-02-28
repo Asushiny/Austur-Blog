@@ -29,12 +29,14 @@
 			<div class="menu">
 				<router-link to="index" exact-active-class="active" class="menuBtn">首页</router-link>
 				<router-link to="wallpaper" exact-active-class="active" class="menuBtn">图片墙</router-link>
+				<router-link to="lyriclist" exact-active-class="active" class="menuBtn">歌词本</router-link>
 				<router-link to="timeline" exact-active-class="active" class="menuBtn">时间轴</router-link>
 				<el-button class="menuBtn2" size="large" :icon="Menu" @click="drawer = true" />
 			</div>
 			<el-drawer v-model="drawer" direction="ltr" size="200" class="menuDrawer">
 				<router-link to="index" exact-active-class="active" @click="drawer = false">首页</router-link>
 				<router-link to="wallpaper" exact-active-class="active" @click="drawer = false">图片墙</router-link>
+				<router-link to="lyriclist" exact-active-class="active" @click="drawer = false">歌词本</router-link>
 				<router-link to="timeline" exact-active-class="active" @click="drawer = false">时间轴</router-link>
 			</el-drawer>
 		</header>
@@ -50,7 +52,7 @@
 		<!-- 底部 -->
 		<el-footer>
 			<div class="footer-left">
-				<p>旭光之后,皆是繁星</p>
+				<p>旭光之后，皆是繁星</p>
 			</div>
 			<div class="footer-right">
 				<p>Copyright © 2022 Austur.</p>

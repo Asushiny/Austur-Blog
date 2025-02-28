@@ -28,3 +28,12 @@ export function getImage(){
 		responseType:'json'
 	})
 }
+
+//每日一言
+export function getYiyan(){
+	return request({
+		url: 'https://v1.hitokoto.cn/',
+		methods: 'get',
+		responseType:'json'
+	})
+}

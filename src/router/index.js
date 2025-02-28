@@ -6,6 +6,8 @@ import {
 //导入组件
 import LayoutVue from '@/views/Layout.vue'
 import IndexVue from '@/views/Index.vue'
+import LyriclistVue from '@/views/Lyriclist.vue'
+import LyricVue from '@/views/Lyric.vue'
 import WallpaperVue from '@/views/Wallpaper.vue'
 import TimelineVue from '@/views/Timeline.vue'
 import UnknownVue from '@/views/404.vue'
@@ -24,6 +26,18 @@ const router = createRouter({
 				component: IndexVue,
 				meta: {
 					title: "主页 | Austur's博客"
+				}
+			}, {
+				path: '/lyriclist',
+				component: LyriclistVue,
+				meta: {
+					title: "lyriclist | Austur's博客"
+				}
+			}, {
+				path: '/lyric',
+				component: LyricVue,
+				meta: {
+					title: "lyric | Austur's博客"
 				}
 			}, {
 				path: '/wallpaper',
