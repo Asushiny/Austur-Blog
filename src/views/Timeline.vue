@@ -19,7 +19,7 @@
 	const timelineEvents = ref([{
 			timestamp: '2025-02-25',
 			title: '博客架构重大更新',
-			content: '全面重构博客系统，优化性能并增强可扩展性',
+			content: '全面重构博客系统，接入supabase',
 			type: 'danger',
 			color: '#f56c6c',
 			icon: DataBoard,
@@ -53,7 +53,7 @@
 		{
 			timestamp: '2024-01-07',
 			title: '音乐播放器集成',
-			content: '成功集成APlayer音乐播放器，支持歌单管理功能',
+			content: '成功集成APlayer音乐播放器',
 			type: 'success',
 			color: '#67c23a',
 			icon: Headset,

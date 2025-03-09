@@ -1,46 +1,74 @@
 <template>
-	<el-row class="main-layout">
-		<el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" class="mainleft">
-			<!-- <div class="loop-typewriter">
-				<span class="text">{{ displayedText }}</span>
-				<span class="cursor" :class="{ 'blinking': isAnimating }">|</span>
-			</div> -->
-		</el-col>
-		<el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8" class="mainright">
-			<el-card shadow="hover" class="aboutme">
-				<h3 style="font-weight: bolder;color: #009def;">Hello It's Austur</h3>
-				<h4 style="font-weight: bolder;">守卫者</h4>
-				<h5 style="color: aqua;">ISFJ-T</h5>
-				<!-- <h6 style="color: darkcyan;">TIMEKEEPER / TRAVELER</h6> -->
-			</el-card>
-			<el-card shadow="hover" style="text-align: center;">
-				<div class="loop-typewriter">
-					<span class="text">{{ displayedText }}</span>
-					<span class="cursor" :class="{ 'blinking': isAnimating }">|</span>
+	<!-- 主内容区 -->
+	<main class="main-content">
+		<!-- 动态背景 -->
+		<div class="animated-bg"></div>
+
+		<!-- 中心内容 -->
+		<div class="content-wrapper">
+			<!-- 标题部分 -->
+			<div class="header-section">
+				<h1 class="main-title">Creative Space</h1>
+				<p class="sub-title">探索技术与设计的无限可能</p>
+			</div>
+			<!-- 打字效果 -->
+			<div class="loop-typewriter">
+				<p class="text">{{ displayedText }}<span class="cursor" :class="{ 'blinking': isAnimating }">|</span>
+				</p>
+			</div>
+
+			<!-- 功能卡片 -->
+			<div class="card-grid">
+				<div class="feature-card" :style="{ '--delay': index * 0.1 + 's' }">
+					<div class="card-inner">
+						<el-icon class="card-icon">
+							<Picture />
+						</el-icon>
+						<h3>收藏图集</h3>
+						<p>共：{{ pics }}张图片</p>
+					</div>
 				</div>
-			</el-card>
-			<el-card shadow="hover" style="text-align: center;">
-				<h3 style="font-weight: bolder;color: #009def;">运行天数</h3>
-				<el-statistic :value="outputValue" />
-				<h6 style="color: darkcyan;">始于2022-01-12</h6>
-			</el-card>
-		</el-col>
-	</el-row>
+				<div class="feature-card" :style="{ '--delay': index * 0.1 + 's' }">
+					<div class="card-inner">
+						<el-icon class="card-icon">
+							<Notebook />
+						</el-icon>
+						<h3>分类归档</h3>
+						<p>共：{{ docs }}篇文档</p>
+					</div>
+				</div>
+				<div class="feature-card" :style="{ '--delay': index * 0.1 + 's' }">
+					<div class="card-inner">
+						<el-icon class="card-icon">
+							<Clock />
+						</el-icon>
+						<h3>运行时间</h3>
+						<p>始于2022-01-12，已运行{{ times }}天</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 </template>
 
 <script setup>
 	import {
 		ref,
-		onBeforeMount,
-		computed,
 		onMounted,
+		computed,
 		onUnmounted
 	} from 'vue'
 	import {
-		useTransition
-	} from '@vueuse/core'
+		supabase
+	} from '../api/supabase.js'
+	import {
+		Picture,
+		Notebook,
+		Clock,
+	} from '@element-plus/icons-vue'
 
-	const fullText = ref('总有一天，我们会在别人的故事里再次相遇的。')
+	//打字效果
+	const fullText = ref('总有一天，我们会在别人的故事里再次相遇。')
 	const currentLength = ref(0)
 	const isTyping = ref(false)
 	const isDeleting = ref(false)
@@ -63,7 +91,7 @@
 					isTyping.value = false
 					resolve()
 				}
-			}, 200)
+			}, 150)
 		})
 	}
 
@@ -86,12 +114,15 @@
 			await typeText()
 			await new Promise(r => timeout = setTimeout(r, 2000)) // 显示停留2秒
 			await deleteText()
-			await new Promise(r => timeout = setTimeout(r, 200)) // 删除后停留2秒
+			await new Promise(r => timeout = setTimeout(r, 2000)) // 删除后停留2秒
 		}
 	}
 
 	onMounted(() => {
 		startLoop()
+		fetchPics()
+		fetchDocs()
+		fetchDays()
 	})
 
 	onUnmounted(() => {
@@ -99,63 +130,117 @@
 		clearTimeout(timeout)
 	})
 
-	// 上次日期和当前日期
-	var firstDate = new Date("2022-01-12");
-	var currentDate = new Date();
-	// 计算时间戳差值
-	var lastTimestamp = Math.floor(firstDate.getTime() / 1000);
-	var currentTimestamp = Math.floor(currentDate.getTime() / 1000);
-	var timestampDiff = currentTimestamp - lastTimestamp;
+	const pics = ref('')
+	const docs = ref('')
+	const times = ref('')
+	// 获取图片
+	const fetchPics = async () => {
+		try {
+			const {
+				data,
+				error
+			} = await supabase.storage
+				.from('austur-assets')
+				.list('wallpaper')
 
-	// 计算天数
-	var days = Math.floor(timestampDiff / 86400);
+			if (error) throw error
+			pics.value = data.length
+		} catch (error) {
+			console.error('加载失败:', error)
+		}
+	}
+	// 获取文章
+	const fetchDocs = async () => {
+		try {
+			let {
+				data: docstable,
+				error
+			} = await supabase
+				.from('docstable')
+				.select('*')
 
-	const source = ref(0)
-	const outputValue = useTransition(source, {
-		duration: 1000,
-	})
-	source.value = days
+			if (error) throw error
+			docs.value = docstable.length
+		} catch (error) {
+			console.error('加载失败:', error)
+		}
+	}
+	//获取时间
+	// 创建一个日期对象
+	const fetchDays = () => {
+		// 定义起始日期（注意：月份从 0 开始，1 月是 0）
+		const startDate = new Date(2022, 0, 12) // 2022-01-12
+		const currentDate = new Date()
+
+		// 计算时间差（毫秒）
+		const timeDiff = currentDate - startDate
+		times.value = Math.floor(timeDiff / (1000 * 60 * 60 * 24))
+	}
 </script>
 
 <style scoped>
-	.main-layout {
-		height: calc(100vh - 122px);
-		min-height: calc(100vh - 122px);
-		padding: 24px;
-		background-color: #f5f7fa;
-	}
-
-	.mainleft {
-		width: 100%;
-		height: 100%;
-		border-radius: 25px;
+	.main-content {
+		/* height: calc(100vh - 122px); */
+		position: relative;
 		overflow: hidden;
-		box-sizing: border-box;
-		box-shadow: 0 2px 8px #00000026;
-		background-image: url(../assets/bg.jpg);
-		background-size: cover;
-		background-position: center center;
-		object-fit: cover;
-		display: flex;
-		justify-content: center;
 	}
 
-	.loop-typewriter {
-		font-size: 2rem;
-		font-family: 'Microsoft YaHei', sans-serif;
-		color: #2c3e50;
-		min-height: 60px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	.animated-bg {
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 200%;
+		height: 200%;
+		background: linear-gradient(45deg,
+				rgba(255, 255, 255, 0.1) 25%,
+				transparent 25%,
+				transparent 50%,
+				rgba(255, 255, 255, 0.1) 50%,
+				rgba(255, 255, 255, 0.1) 75%,
+				transparent 75%,
+				transparent);
+		background-size: 60px 60px;
+		animation: bgFlow 20s linear infinite;
+		opacity: 0.3;
+	}
+
+	.content-wrapper {
+		position: relative;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 40px 20px;
+		height: 100%;
+	}
+
+	.header-section {
 		text-align: center;
-		padding: 20px;
+		/* margin-bottom: 60px; */
+	}
+
+	.main-title {
+		font-size: 3.5rem;
+		color: #55aaff;
+		font-weight: bolder;
+		margin-bottom: 20px;
+		letter-spacing: 2px;
+	}
+
+	.sub-title {
+		font-size: 1.2rem;
+		color: #64748b;
+	}
+
+	/* 打字 */
+	.loop-typewriter {
+		height: 40px;
+		text-align: center;
+		margin: 30px 0;
 	}
 
 	/* 添加过渡效果 */
 	.text {
-		font-size: 22px;
-		color: #59cbcb;
+		font-size: 26px;
+		color: #00ffd7;
 		transition: all 0.3s;
 		display: inline-block;
 		min-width: 1px;
@@ -163,6 +248,7 @@
 	}
 
 	.cursor {
+		font-size: 26px;
 		color: #409eff;
 		margin-left: 4px;
 		opacity: 1;
@@ -184,57 +270,111 @@
 		}
 	}
 
-	.mainright {
-		width: 100%;
-		padding: 0 20px;
-		display: flex;
-		flex-direction: column;
+	/* 卡片网格布局 */
+	.card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 30px;
+		margin-bottom: 60px;
 	}
 
-	.el-card {
-		width: 100%;
-		margin: 10px;
-		border-radius: 20px;
-		box-sizing: border-box;
-		box-shadow: 0 2px 8px #00000026;
-		flex: 1;
-		transition: flex 0.3s ease;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-family: Arial;
-		font-size: 24px;
+	.feature-card {
+		background: white;
+		border-radius: 16px;
+		padding: 2px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
 	}
 
-	.el-card:hover {
-		flex: 2;
+	.feature-card::before {
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 200%;
+		height: 200%;
+		background: linear-gradient(45deg,
+				transparent 35%,
+				rgba(99, 102, 241, 0.1) 50%,
+				transparent 65%);
+		animation: cardGlow 3s infinite;
 	}
 
-	.aboutme {
-		background-image: url(../assets/isfj.svg);
-		background-size: auto 80%;
-		background-position: center right;
-		background-repeat: no-repeat;
+	.card-inner {
+		position: relative;
+		background: white;
+		border-radius: 14px;
+		padding: 30px;
+		height: 100%;
+		transition: transform 0.3s ease;
 	}
 
-	/* 响应式设计 */
+	.feature-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+	}
+
+	.feature-card:hover .card-inner {
+		transform: scale(0.98);
+	}
+
+	.card-icon {
+		width: 60px;
+		height: 60px;
+		font-size: 60px;
+		color: #6366f1;
+		margin-bottom: 20px;
+	}
+
+	.feature-card h3 {
+		font-size: 1.5rem;
+		color: #1e293b;
+		margin-bottom: 12px;
+	}
+
+	.feature-card p {
+		color: #64748b;
+		line-height: 1.6;
+	}
+
+	/* 动画效果 */
+	@keyframes bgFlow {
+		0% {
+			transform: rotate(0deg) translate(0, 0);
+		}
+
+		100% {
+			transform: rotate(360deg) translate(30px, 30px);
+		}
+	}
+
+	@keyframes cardGlow {
+		0% {
+			transform: translate(-25%, -25%) rotate(0deg);
+		}
+
+		100% {
+			transform: translate(-25%, -25%) rotate(360deg);
+		}
+	}
+
 	@media (max-width: 768px) {
-		.mainleft {
-			width: 100%;
-			height: 200px;
-			border-radius: 25px;
-			overflow: hidden;
-			box-sizing: border-box;
-			box-shadow: 0 2px 8px #00000026;
+		.main-title {
+			font-size: 2.5rem;
 		}
 
 		.loop-typewriter {
-			font-size: 1.5rem;
-			padding: 10px;
+			height: 80px;
 		}
 
-		.mainright {
-			padding: 0 20px 0 0;
+		.text {
+			font-size: 20px;
+		}
+
+		.card-grid {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>

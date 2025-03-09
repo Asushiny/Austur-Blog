@@ -3,13 +3,13 @@
 	import 'aplayer/dist/APlayer.min.css';
 	import APlayer from 'aplayer';
 	import {
-		getMusic
-	} from '@/api/index.js';
+		supabase
+	} from '../api/supabase.js'
 
 	export default {
 		name: 'AplayerView',
 		mounted() {
-			this.addMyAudio();
+			this.fetchData();
 		},
 		data() {
 			return {
@@ -17,17 +17,30 @@
 			}
 		},
 		methods: {
+			async fetchData() {
+				try {
+					const {
+						data: musictable,
+						error
+					} = await supabase
+						.from('musictable')
+						.select('*')
+					if (error) throw error
+
+					this.audio = musictable
+					this.addMyAudio()
+				} catch (error) {
+					console.error('Error fetching data:', error);
+				}
+			},
 			addMyAudio() {
-				getMusic().then(res => {
-					this.audio = res
-					const ap = new APlayer({
-						container: document.getElementById("aplayer"),
-						listFolded: true,
-						listMaxHeight: 90,
-						lrcType: 3,
-						audio: this.audio,
-						fixed: true,
-					})
+				const ap = new APlayer({
+					container: document.getElementById("aplayer"),
+					listFolded: true,
+					listMaxHeight: 90,
+					lrcType: 3,
+					audio: this.audio,
+					fixed: true,
 				})
 			}
 		},
@@ -38,11 +51,11 @@
 </template>
 
 <style scoped>
-	#aplayer {
-		/* width: 50px; */
-		/* height: 50px; */
-		/* min-width: 425px; */
-		/* position: absolute; */
-		/* bottom: 0; */
-	}
+	/* #aplayer { */
+	/* width: 50px; */
+	/* height: 50px; */
+	/* min-width: 425px; */
+	/* position: absolute; */
+	/* bottom: 0; */
+	/* } */
 </style>
