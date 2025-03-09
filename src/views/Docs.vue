@@ -184,7 +184,7 @@
 <style scoped>
 	.docs-container {
 		width: 90%;
-		height: calc(100vh - 180px);
+		max-height: calc(100vh - 180px);
 		margin: 20px auto;
 		padding: 24px;
 		background: #fff;
@@ -203,7 +203,7 @@
 
 	.table-wrapper {
 		flex: 1;
-		min-height: 400px;
+		height: 400px;
 		overflow-x: auto;
 	}
 
