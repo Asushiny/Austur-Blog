@@ -11,7 +11,7 @@
 			<el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
 				<el-card shadow="always">
 					<p>个人储蓄</p>
-					<el-statistic :value="selfValue" />
+					<el-statistic :value="selfsaveValue" />
 				</el-card>
 			</el-col>
 			<el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
@@ -38,6 +38,11 @@
 					<el-form-item label="工资收入" prop="salary">
 						<el-input v-model.number="formData.salary" />
 					</el-form-item>
+					
+					<!-- 个人消费 -->
+					<el-form-item label="个人消费" prop="selfuse">
+						<el-input v-model.number="formData.selfuse" />
+					</el-form-item>
 
 					<!-- 临时储蓄 -->
 					<el-form-item label="临时储蓄" prop="temporary">
@@ -45,8 +50,8 @@
 					</el-form-item>
 
 					<!-- 个人储蓄 -->
-					<el-form-item label="个人储蓄" prop="self">
-						<el-input v-model.number="formData.self" />
+					<el-form-item label="个人储蓄" prop="selfsave">
+						<el-input v-model.number="formData.selfsave" />
 					</el-form-item>
 
 					<!-- 父母储蓄 -->
@@ -78,6 +83,12 @@
 						<div class="cell-content">{{ row.salary }}</div>
 					</template>
 				</el-table-column>
+				
+				<el-table-column prop="selfuse" label="个人消费">
+					<template #default="{ row }">
+						<div class="cell-content">{{ row.selfuse }}</div>
+					</template>
+				</el-table-column>
 
 				<el-table-column prop="temporary" label="临时储蓄">
 					<template #default="{ row }">
@@ -85,9 +96,9 @@
 					</template>
 				</el-table-column>
 
-				<el-table-column prop="self" label="个人储蓄">
+				<el-table-column prop="selfsave" label="个人储蓄">
 					<template #default="{ row }">
-						<div class="cell-content">{{ row.self }}</div>
+						<div class="cell-content">{{ row.selfsave }}</div>
 					</template>
 				</el-table-column>
 
@@ -132,8 +143,9 @@
 	const formData = reactive({
 		date: (new Date()).toJSON().slice(0, 10),
 		salary: '',
+		selfuse: '',
 		temporary: '',
-		self: '',
+		selfsave: '',
 		parents: '',
 	})
 	const formRef = ref()
@@ -145,12 +157,17 @@
 			message: '请输入工资收入',
 			trigger: 'blur'
 		}],
+		selfuse: [{
+			required: true,
+			message: '请输入个人消费',
+			trigger: 'blur'
+		}],
 		temporary: [{
 			required: true,
 			message: '请输入临时储蓄',
 			trigger: 'blur'
 		}],
-		self: [{
+		selfsave: [{
 			required: true,
 			message: '请输入个人储蓄',
 			trigger: 'blur'
@@ -180,7 +197,7 @@
 			addDialog.value = false
 			formRef.value.resetFields()
 			fetchTemporary()
-			fetchSelf()
+			fetchselfsave()
 			fetchParents()
 			fetchData()
 		} catch (error) {
@@ -190,12 +207,12 @@
 	// 顶部卡片
 	const accountData = ref([])
 	const temporary = ref(0)
-	const self = ref(0)
+	const selfsave = ref(0)
 	const parents = ref(0)
 	const temporaryValue = useTransition(temporary, {
 		duration: 1500,
 	})
-	const selfValue = useTransition(self, {
+	const selfsaveValue = useTransition(selfsave, {
 		duration: 1500,
 	})
 	const parentsValue = useTransition(parents, {
@@ -223,7 +240,7 @@
 		}
 	}
 	// 获取个人数值
-	const fetchSelf = async () => {
+	const fetchselfsave = async () => {
 		try {
 			// 使用Supabase查询总和
 			const {
@@ -231,12 +248,12 @@
 				error
 			} = await supabase
 				.from('accounttable')
-				.select('self')
+				.select('selfsave')
 
 			if (error) throw error
 			accountData.value = data || []
-			self.value = data.reduce((acc, item) => {
-				const num = Number(item.self)
+			selfsave.value = data.reduce((acc, item) => {
+				const num = Number(item.selfsave)
 				return acc + (isNaN(num) ? 0 : num)
 			}, 0)
 		} catch (error) {
@@ -326,7 +343,7 @@
 
 	onMounted(() => {
 		fetchTemporary()
-		fetchSelf()
+		fetchselfsave()
 		fetchParents()
 		fetchData()
 	})
