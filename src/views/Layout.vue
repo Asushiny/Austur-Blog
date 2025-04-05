@@ -61,6 +61,6 @@
 	}
 
 	.view {
-		padding: 10px 10% 10px 10%;
+		padding: 10px 3% 10px 3%;
 	}
 </style>
