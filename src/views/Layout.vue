@@ -12,21 +12,21 @@
 	const router = useRouter()
 
 	//判定本地是否存在，否则回到登录页面
-	onBeforeMount(() => {
-		var loginData = localStorage.getItem('login');
-		if (loginData) {
-			loginData = JSON.parse(loginData);
-			var currentTime = new Date().getTime();
+	// onBeforeMount(() => {
+	// 	var loginData = localStorage.getItem('login');
+	// 	if (loginData) {
+	// 		loginData = JSON.parse(loginData);
+	// 		var currentTime = new Date().getTime();
 
-			if (currentTime > loginData.expiration) {
-				// 数据已过期，清除
-				localStorage.removeItem('login');
-				router.push('/login')
-			}
-		} else {
-			router.push('/login')
-		}
-	});
+	// 		if (currentTime > loginData.expiration) {
+	// 			// 数据已过期，清除
+	// 			localStorage.removeItem('login');
+	// 			router.push('/login')
+	// 		}
+	// 	} else {
+	// 		router.push('/login')
+	// 	}
+	// });
 </script>
 
 <template>
