@@ -240,7 +240,7 @@
 	/* 添加过渡效果 */
 	.text {
 		font-size: 26px;
-		color: #00ffd7;
+		color: #00ffff;
 		transition: all 0.3s;
 		display: inline-block;
 		min-width: 1px;
